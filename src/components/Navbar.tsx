@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
+import logo from '@/assets/logo.jpeg';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +17,10 @@ const Navbar = () => {
   };
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'it' ? 'en' : 'it';
-    i18n.changeLanguage(newLang);
+    const languages = ['it', 'en', 'es', 'ru', 'zh'];
+    const currentIndex = languages.indexOf(i18n.language);
+    const nextIndex = (currentIndex + 1) % languages.length;
+    i18n.changeLanguage(languages[nextIndex]);
   };
 
   return (
@@ -26,9 +29,9 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <button 
             onClick={() => scrollToSection('hero')}
-            className="text-2xl font-bold tracking-tight"
+            className="flex items-center"
           >
-            <span className="border-b-2 border-foreground pb-1">LORENZO</span>
+            <img src={logo} alt="Lorenzo & Lorenzo" className="h-12 w-auto" />
           </button>
 
           <div className="flex items-center gap-4">
