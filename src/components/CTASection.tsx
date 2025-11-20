@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { Button } from '@/components/ui/button';
+import { BOOKING_URL } from '@/lib/booking';
 
 const CTASection = () => {
   const { t } = useTranslation();
@@ -13,11 +14,14 @@ const CTASection = () => {
         <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
           {t('cta.description')}
         </p>
-        <Button 
+        <Button
           size="lg"
-          className="bg-accent text-accent-foreground hover:bg-accent/90 px-12 py-6 text-lg"
+          className="bg-teal text-primary-foreground hover:bg-teal/90 px-12 py-6 text-lg"
+          asChild
         >
-          {t('cta.button')}
+          <a href={BOOKING_URL} target="_blank" rel="noreferrer">
+            {t('cta.button')}
+          </a>
         </Button>
       </div>
     </section>

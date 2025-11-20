@@ -5,6 +5,9 @@ import NeighborhoodSection from '@/components/NeighborhoodSection';
 import RoomsSection from '@/components/RoomsSection';
 import AmenitiesSection from '@/components/AmenitiesSection';
 import CTASection from '@/components/CTASection';
+import HostsSection from '@/components/HostsSection';
+import ParkingSection from '@/components/ParkingSection';
+import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -16,6 +19,9 @@ const Index = () => {
       <NeighborhoodSection />
       <RoomsSection />
       <AmenitiesSection />
+      <ParkingSection />
+      <HostsSection />
+      <FAQSection />
       <CTASection />
       <Footer />
     </div>
