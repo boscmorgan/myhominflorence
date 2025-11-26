@@ -31,9 +31,6 @@ const Footer = () => {
           </div>
 
           <div className="space-y-4 md:text-right">
-            <p className="text-2xl md:text-3xl font-bold">
-              {t('footer.tagline')}
-            </p>
             <p className="text-sm md:text-base text-primary-foreground/80">
               {t('footer.touristTaxNote')}
             </p>

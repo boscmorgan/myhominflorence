@@ -105,7 +105,6 @@ const HeroSection = () => {
               {t('hero.checkRooms')}
             </Button>
             <p className="text-xs md:text-sm text-primary-foreground/80">
-              {t('hero.selfCheckInNote')}{' '}
               <button
                 type="button"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -113,6 +112,13 @@ const HeroSection = () => {
               >
                 {t('hero.writeUs')}
               </button>
+              {' '}
+              <a 
+                href="mailto:lorenzoelorenzo@libero.it" 
+                className="font-medium hover:text-primary-foreground transition-colors"
+              >
+                lorenzoelorenzo@libero.it
+              </a>
             </p>
           </div>
         </div>
