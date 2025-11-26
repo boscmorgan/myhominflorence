@@ -57,12 +57,13 @@ const Navbar = () => {
   }, [i18n]);
 
   useEffect(() => {
+    type SectionId = typeof menuSections[number]['id'];
     const sectionIds = menuSections.map((section) => section.id);
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const id = entry.target.id;
+            const id = entry.target.id as SectionId;
             if (sectionIds.includes(id)) {
               setActiveSection(id);
             }

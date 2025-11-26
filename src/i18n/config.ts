@@ -22,7 +22,6 @@ const resources = {
         selfCheckInBadge: "Self check-in & luggage storage",
         locationBadge: "San Niccolò • Near Ponte Vecchio",
         checkRooms: "Check rooms",
-        selfCheckInNote: "Self check-in • Luggage storage included",
         writeUs: "or write us"
       },
       about: {
@@ -149,7 +148,7 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
           },
           touristTax: {
             q: "Is there a tourist tax in Florence?",
-            a: "Guests pay a tourist tax of €5.50 per person per night, up to 7 nights, as part of their reservation. It is set by the Municipality of Florence and is separate from our service fees."
+            a: "Guests pay a tourist tax starting from €6.00 per person per night, up to 7 nights, as part of their reservation. It is set by the Municipality of Florence. Call us for specific details."
           }
         }
       },
@@ -158,10 +157,9 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
         address: "Via di San Niccolò 63",
         city: "50125 — Florence, Tuscany, Italy",
         phone: "+39 055 123 4567",
-        email: "info@myhomeinflorence.com",
+        email: "lorenzoelorenzo@libero.it",
         touristTaxNote:
-          "Guests who book stays in Florence pay a city tourist tax of €5.50 per person per night (up to 7 nights). For details, visit the Municipality of Florence website.",
-        tagline: "Lorenzo & Lorenzo is your home in Florence.",
+          "Guests who book stays in Florence pay a city tourist tax starting from €6.00 per person per night (up to 7 nights). Call us for details.",
         copyright: "© 2025 Lorenzo & Lorenzo. All rights reserved."
       }
     }
@@ -177,11 +175,10 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
         contact: "Contatti",
         language: "Lingua"
       },
-      hero: {
+        hero: {
         welcome: "Benvenuti a Firenze",
         ratingBadge: "Valutazione 4,68 • Oltre 1.700 recensioni",
         checkRooms: "Scopri le camere",
-        selfCheckInNote: "Self check-in • Deposito bagagli incluso",
         writeUs: "oppure scrivici"
       },
       about: {
@@ -227,8 +224,10 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
         address: "Via di San Niccolò 63",
         city: "50125 — Firenze, Toscana, Italia",
         phone: "+39 055 123 4567",
-        email: "info@myhomeinflorence.com",
-        tagline: "Lorenzo & Lorenzo è fatto per te."
+        email: "lorenzoelorenzo@libero.it",
+        touristTaxNote:
+          "Gli ospiti che prenotano soggiorni a Firenze pagano una tassa di soggiorno comunale a partire da € 6,00 per persona a notte (fino a 7 notti). Chiamaci per i dettagli.",
+        copyright: "© 2025 Lorenzo & Lorenzo. Tutti i diritti riservati."
       }
     }
   },
@@ -243,11 +242,10 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
         contact: "Contacto",
         language: "Idioma"
       },
-      hero: {
+        hero: {
         welcome: "Bienvenidos a Florencia",
         ratingBadge: "Valoración 4,68 • Más de 1.700 reseñas",
         checkRooms: "Ver habitaciones",
-        selfCheckInNote: "Self check-in • Consigna incluida",
         writeUs: "o escríbenos"
       },
       about: {
@@ -293,8 +291,7 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
         address: "Via di San Niccolò 63",
         city: "50125 — Florencia, Toscana, Italia",
         phone: "+39 055 123 4567",
-        email: "info@myhomeinflorence.com",
-        tagline: "Lorenzo & Lorenzo está hecho para ti."
+        email: "lorenzoelorenzo@libero.it"
       }
     }
   },
@@ -309,11 +306,10 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
         contact: "Контакты",
         language: "Язык"
       },
-      hero: {
+        hero: {
         welcome: "Добро пожаловать во Флоренцию",
         ratingBadge: "Рейтинг 4,68 • Более 1 700 отзывов",
         checkRooms: "Посмотреть номера",
-        selfCheckInNote: "Self check-in • Хранение багажа включено",
         writeUs: "или напишите нам"
       },
       about: {
@@ -359,8 +355,7 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
         address: "Via di San Niccolò 63",
         city: "50125 — Флоренция, Тоскана, Италия",
         phone: "+39 055 123 4567",
-        email: "info@myhomeinflorence.com",
-        tagline: "Lorenzo & Lorenzo создан для вас."
+        email: "lorenzoelorenzo@libero.it"
       }
     }
   },
@@ -375,11 +370,10 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
         contact: "联系方式",
         language: "语言"
       },
-      hero: {
+        hero: {
         welcome: "欢迎来到佛罗伦萨",
         ratingBadge: "评分 4.68 · 超过 1,700 条评价",
         checkRooms: "查看客房",
-        selfCheckInNote: "自助入住 · 含行李寄存",
         writeUs: "或给我们写信"
       },
       about: {
@@ -425,8 +419,7 @@ Lorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, y
         address: "Via di San Niccolò 63",
         city: "50125 — 佛罗伦萨, 托斯卡纳, 意大利",
         phone: "+39 055 123 4567",
-        email: "info@myhomeinflorence.com",
-        tagline: "Lorenzo & Lorenzo 为您而生。"
+        email: "lorenzoelorenzo@libero.it"
       }
     }
   }
