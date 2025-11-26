@@ -2,10 +2,23 @@ import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const { t } = useTranslation();
-  const phone = t('footer.phone');
+  const phonesResult = t('footer.phones', { returnObjects: true }) as string[] | string;
+  const phoneList = Array.isArray(phonesResult)
+    ? phonesResult
+    : phonesResult
+      ? [phonesResult]
+      : [];
   const email = t('footer.email');
+  const whatsappLabel = t('footer.whatsapp');
+  const propertyIntro = t('footer.propertyCTA.intro');
+  const propertyInvite = t('footer.propertyCTA.invite');
+  const propertyConnector = t('footer.propertyCTA.connector');
+  const propertyApproachLabel = t('footer.propertyCTA.approachLinkLabel');
+  const propertyDeckLabel = t('footer.propertyCTA.deckLinkLabel');
+  const approachLink = "https://www.canva.com/design/DAGgSS1Ym1k/8SyOyyiFxmPg-D829_psvg/edit?utm_content=DAGgSS1Ym1k&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton";
+  const deckLink = "https://www.canva.com/design/DAGgSVBFAc4/kIzpvEqMjxYVO9eT9WygFw/view?utm_content=DAGgSVBFAc4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h05c240ebf0";
+  const whatsappLink = "https://wa.me/393890108370";
 
-  const normalizedPhoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
   const emailHref = `mailto:${email}`;
 
   return (
@@ -17,14 +30,26 @@ const Footer = () => {
             <div className="space-y-2 text-lg">
               <p>{t('footer.address')}</p>
               <p>{t('footer.city')}</p>
-              <p className="mt-4">
-                <a href={normalizedPhoneHref} className="underline underline-offset-4">
-                  {phone}
-                </a>
-              </p>
+              <div className="mt-4 space-y-2">
+                {phoneList.map((phone) => {
+                  const normalizedPhoneHref = `tel:${phone.replace(/[^+\d]/g, '')}`;
+                  return (
+                    <p key={phone}>
+                      <a href={normalizedPhoneHref} className="underline underline-offset-4">
+                        {phone}
+                      </a>
+                    </p>
+                  );
+                })}
+              </div>
               <p>
                 <a href={emailHref} className="underline underline-offset-4">
                   {email}
+                </a>
+              </p>
+              <p>
+                <a href={whatsappLink} className="underline underline-offset-4" target="_blank" rel="noreferrer">
+                  {whatsappLabel}
                 </a>
               </p>
             </div>
@@ -33,6 +58,27 @@ const Footer = () => {
           <div className="space-y-4 md:text-right">
             <p className="text-sm md:text-base text-primary-foreground/80">
               {t('footer.touristTaxNote')}
+            </p>
+            <p className="text-sm text-primary-foreground/90 leading-relaxed pt-2 border-t border-primary-foreground/20 md:border-none md:pt-4">
+              <span className="font-semibold block mb-1">{propertyIntro}</span>
+              {propertyInvite}{' '}
+              <a
+                href={approachLink}
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-4 font-semibold"
+              >
+                {propertyApproachLabel}
+              </a>{' '}
+              {propertyConnector}{' '}
+              <a
+                href={deckLink}
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-4 font-semibold"
+              >
+                {propertyDeckLabel}
+              </a>.
             </p>
           </div>
         </div>

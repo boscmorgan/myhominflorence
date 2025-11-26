@@ -1,0 +1,210 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "rooms": "客房",
+    "location": "位置",
+    "amenities": "设施",
+    "contact": "联系我们",
+    "language": "语言",
+    "logoAlt": "Lorenzo & Lorenzo 标志",
+    "tagline": "客房与公寓",
+    "menuToggle": "切换导航菜单"
+  },
+  "hero": {
+    "welcome": "欢迎来到佛罗伦萨",
+    "mainTitle": "佛罗伦萨圣尼科洛的客房和公寓",
+    "valueProp": "我们位于圣尼科洛的设施齐全的客房和公寓距离老桥仅几步之遥，让您享受宾至如归的感觉——在轻松、年轻的氛围中享受舒适、实惠的住宿。",
+    "ratingBadge": "4.68 评级 • 1,700 多条评论",
+    "selfCheckInBadge": "自助办理入住和行李寄存",
+    "locationBadge": "圣尼科洛 • 靠近老桥",
+    "checkRooms": "查看客房",
+    "writeUs": "或写信给我们",
+    "scrollHint": "滚动查看客房",
+    "greetings": {
+      "it": "Benvenuti",
+      "en": "Welcome",
+      "es": "Bienvenidos",
+      "ru": "Добро пожаловать",
+      "zh": "欢迎"
+    }
+  },
+  "about": {
+    "title": "关于我们",
+    "description": "立即预订，以不同的方式游览佛罗伦萨 - 享受宾至如归的感觉。我们设施齐全的客房和公寓位于历史悠久的圣尼科洛 (San Niccolò) 街区，距离老桥 (Ponte Vecchio) 仅几步之遥，为您提供经济实惠的住宿体验。\nLorenzo & Lorenzo 以老朋友般的热情接待客人，营造出一种简单、年轻的氛围，让客人像家人一样受到欢迎，周围有咖啡馆、小餐馆、比萨饼店、面包店、艺术画廊和当地商店，体现了真正的佛罗伦萨精神。",
+    "snippet": "来认识一下“Il Bello”和“Il Vagge”——这两位老朋友将他们的圣尼科洛公寓变成了欢迎现代旅行者的住宿加早餐酒店。",
+    "meetHostsLink": "认识 Il Bello 与 Il Vagge",
+    "hostsAlt": "Lorenzo & Lorenzo"
+  },
+  "neighborhood": {
+    "title": "探索我们的社区",
+    "description": "入住圣尼科洛 (San Niccolò)，这是佛罗伦萨古城墙内的一个历史街区，距离阿诺河 (Arno) 和韦奇奥桥 (Ponte Vecchio) 仅有几步之遥，那里遍布咖啡馆、小酒馆、艺术画廊和当地小商店。我们的前台和主要运营基地就设在这里，尽管我们在佛罗伦萨各地都有房间和公寓，因此下面提到的所有步行距离都以这个圣尼科洛据点为起点。",
+    "mapLink": "在地图上查看",
+    "chips": {
+      "ponteVecchio": "老桥 • 步行 10 分钟",
+      "michelangelo": "米开朗基罗广场 • 步行 8 分钟",
+      "boboli": "波波里花园 • 步行 15 分钟",
+      "uffizi": "乌菲兹美术馆 • 步行 12 分钟"
+    },
+    "images": {
+      "gallery": "圣尼科洛阳光明媚的街道",
+      "piazza": "佛罗伦萨阿诺河附近的广场"
+    }
+  },
+  "rooms": {
+    "title": "客房和公寓",
+    "description": "每间客房和公寓均经过精心设计，配有复古意大利家具，将舒适与特色融为一体，让您在探索佛罗伦萨时享受宾至如归的感觉。",
+    "fromPriceLabel": "从 €{{price}} / 晚",
+    "photosLabel": "{{count}} 照片",
+    "guestsLabel": "位客人",
+    "guestsLabelPlural": "位客人",
+    "viewOnAirbnb": "在爱彼迎上查看",
+    "distanceLabel": "距中心距离: {{distance}} 公里",
+    "contactHost": "联系我们",
+    "badges": {
+      "couples": "非常适合情侣",
+      "spacious": "格外宽敞明亮",
+      "terrace": "私人露台和厨房"
+    },
+    "list": [
+      {
+        "id": "executive",
+        "title": "行政双人床",
+        "description": "我们宽敞的行政房配有舒适的床和现代化的浴室，为您带来皇家般的住宿体验。",
+        "size": "20平方米"
+      },
+      {
+        "id": "deluxe",
+        "title": "豪华双人床",
+        "description": "您值得得到一点额外的呵护。我们的豪华双人床增加了额外的空间、自然光线和舒适的椅子供您放松。",
+        "size": "22平方米"
+      },
+      {
+        "id": "penthouse",
+        "title": "顶层公寓",
+        "description": "寻找非凡的住宿体验？我们的顶层公寓是一间量身定制的公寓，设有私人露台和厨房。",
+        "size": "三间卧室 • 每间面积 19 平方米"
+      }
+    ],
+    "features": {
+      "sizeLabel": "平均房间面积：{{size}}",
+      "climateControl": "气候控制",
+      "privateBathroom": "带淋浴的私人浴室",
+      "desk": "桌子",
+      "wifi": "Wi‑Fi"
+    },
+    "platforms": {
+      "airbnb": "Airbnb",
+      "booking": "Booking.com"
+    }
+  },
+  "amenities": {
+    "title": "住宿所需的一切",
+    "subtitle": "必备设施、舒适体验和贴心小细节，让 Lorenzo & Lorenzo 如家般温暖。",
+    "groups": {
+      "essentials": "必备",
+      "comfort": "舒适",
+      "extras": "额外服务"
+    },
+    "wifi": "Wi‑Fi",
+    "luggage": "行李寄存",
+    "checkin": "灵活入住",
+    "kitchen": "厨房与休息区",
+    "toiletries": "洗浴用品",
+    "shower": "私人淋浴间",
+    "towels": "毛巾",
+    "hairdryer": "吹风机",
+    "ac": "空调",
+    "iron": "熨斗",
+    "piano": "钢琴",
+    "books": "书籍与图书角"
+  },
+  "cta": {
+    "title": "准备好体验佛罗伦萨了吗？",
+    "description": "预订我们的住宿，探索真正的佛罗伦萨中心。我们迫不及待地欢迎您。",
+    "button": "立即预订"
+  },
+  "hosts": {
+    "title": "您的主人",
+    "subtitle": "两个朋友把对佛罗伦萨的热爱变成了旅行者的家。",
+    "names": "洛伦佐与洛伦佐",
+    "role": "主办方",
+    "rating": "4.68 评分 • 4,277 条以上评论",
+    "bio": "当地人称他们为“Il Bello”和“Il Vagge”：洛伦佐·贝里尼 (Lorenzo Bellini) 有着一张饱经阳光的托斯卡纳脸，一双大手可以解决从电梯到棘手情况的所有事情；而洛伦佐·瓦格利 (Lorenzo Vaggelli) 则是金发女郎，有着害羞的眼睛和狂野的胡须，他高兴地步行穿过佛罗伦萨去拜访朋友。他们一起在奥尔特拉诺街道上经营他们的圣尼科洛住宿加早餐酒店，这里是一切开始的地方——城内的一个小村庄，位于阿诺河和圣米尼亚托山之间，点缀着咖啡馆、面包店、画廊和小餐馆——以真正的佛罗伦萨人的热情和幽默欢迎客人。",
+    "born": "80年代出生",
+    "work": "度假出租屋主人",
+    "lives": "总部位于意大利佛罗伦萨"
+  },
+  "parking": {
+    "title": "洛伦佐和洛伦佐的停车场",
+    "subtitle": "ZTL 外设有专属宾客停车场。",
+    "intro": "为了让您的住宿更加轻松，我们为客人提供独特、便捷的停车选择。我们的停车场位于佛罗伦萨交通限制区 (ZTL) 外，因此您可以驾车抵达并步行探索这座城市。",
+    "tableTitle": "收费标准",
+    "daily": "每日",
+    "weekly": "每周",
+    "dailyPrice": "每天 20 欧元",
+    "weeklyPrice": "每周 120 欧元",
+    "contact": "计划造访？请发送邮件至 lorenzoelorenzo@libero.it 查询车位与预订。",
+    "contactCta": "查询车位可用性",
+    "bulletsTitle": "为什么我们的停车场运作良好",
+    "items": {
+      "location": "地理位置优越，位于 ZTL 外，靠近历史中心。",
+      "pricing": "无论您入住几晚还是几天，价格都有竞争力。",
+      "booking": "我们建议您提前预订，尤其是在旺季期间，以保证您的席位。"
+    },
+    "nearbyPlaces": {
+      "michelangelo": "米开朗基罗广场",
+      "boboli": "波波里花园",
+      "pitti": "皮蒂宫",
+      "uffizi": "乌菲齐"
+    }
+  },
+  "faq": {
+    "title": "很高兴知道",
+    "subtitle": "对客人最常问的问题的一些快速解答。",
+    "items": {
+      "lateCheckin": {
+        "q": "我可以晚到吗？",
+        "a": "可以的，只需提前告知预计抵达时间，我们会亲自与您联系并安排入住细节。"
+      },
+      "luggage": {
+        "q": "我可以寄存行李吗？",
+        "a": "我们通常可以在入住前或退房后寄存您的行李。请提前告知我们，以便我们安排。"
+      },
+      "parking": {
+        "q": "有停车位吗？",
+        "a": "是的。我们在 ZTL 外提供私人停车场，按日和周收费。详情请参阅停车部分。"
+      },
+      "touristTax": {
+        "q": "佛罗伦萨有旅游税吗？",
+        "a": "作为预订的一部分，客人需缴纳每人每晚 6 欧元起的旅游税，最多 7 晚。它由佛罗伦萨市政府制定。请致电我们了解具体详情。"
+      }
+    }
+  },
+  "footer": {
+    "contact": "联系我们",
+    "address": "Via di San Niccolò 63",
+    "city": "50125 — 佛罗伦萨, 托斯卡纳, 意大利",
+    "phones": [
+      "+39 055 2638097",
+      "+39 339 1554694",
+      "+39 389 0108370"
+    ],
+    "email": "lorenzoelorenzo@libero.it",
+    "whatsapp": "通过 WhatsApp 联系我们",
+    "propertyCTA": {
+      "intro": "您是房东并需要托管服务吗？",
+      "invite": "欢迎联系我们，了解我们的运营方式",
+      "connector": "并查看我们的介绍资料",
+      "approachLinkLabel": "点击这里",
+      "deckLinkLabel": "点击这里"
+    },
+    "touristTaxNote": "在佛罗伦萨预订住宿的住客需支付每人每晚 6.00 欧元起的城市旅游税（最多 7 晚）。请致电我们了解详情。",
+    "copyright": "© 2025 洛伦佐和洛伦佐。版权所有。"
+  },
+  "notFound": {
+    "title": "未找到页面",
+    "description": "您要访问的页面不存在，或可能已被移动。",
+    "cta": "返回首页"
+  }
+}

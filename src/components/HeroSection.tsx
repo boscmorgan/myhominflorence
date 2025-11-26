@@ -1,34 +1,39 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import heroImage from '@/assets/reception_003.jpg';
 import { Button } from '@/components/ui/button';
+import { supportedLanguages, type SupportedLanguage } from '@/i18n/config';
 
-const languages = ['it', 'en', 'es', 'ru', 'zh'] as const;
+const heroRotationOrder: SupportedLanguage[] = [
+  'it',
+  ...supportedLanguages.filter((lang) => lang !== 'it')
+];
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation();
   const [welcomeText, setWelcomeText] = useState('');
   const [isGreetingVisible, setIsGreetingVisible] = useState(true);
+  const greetingMap = useMemo(() => {
+    return heroRotationOrder.reduce((acc, lang) => {
+      acc[lang] = t(`hero.greetings.${lang}`);
+      return acc;
+    }, {} as Record<SupportedLanguage, string>);
+  }, [t]);
+
+  const email = t('footer.email');
 
   useEffect(() => {
-    const map = {
-      it: 'Benvenuti',
-      en: 'Welcome',
-      es: 'Bienvenidos',
-      ru: 'Добро пожаловать',
-      zh: '欢迎'
-    } as const;
-
-    const initialIndex = languages.indexOf(i18n.language as (typeof languages)[number]);
+    const initialIndex = heroRotationOrder.indexOf(i18n.language as SupportedLanguage);
     const safeInitialIndex = initialIndex === -1 ? 0 : initialIndex;
-    const initialKey = languages[safeInitialIndex];
+    const initialKey = heroRotationOrder[safeInitialIndex];
+    const defaultGreeting = greetingMap[initialKey] ?? greetingMap.it ?? '';
 
-    setWelcomeText(map[initialKey] ?? 'Benvenuti');
+    setWelcomeText(defaultGreeting);
     setIsGreetingVisible(true);
 
     let index = safeInitialIndex;
     const maxRotations = 3; // full cycles through all languages
-    const totalSteps = languages.length * maxRotations;
+    const totalSteps = heroRotationOrder.length * maxRotations;
     let step = 0;
 
     const intervalId = window.setInterval(() => {
@@ -36,7 +41,7 @@ const HeroSection = () => {
         // stop on the user's original language
         setIsGreetingVisible(false);
         window.setTimeout(() => {
-          setWelcomeText(map[initialKey] ?? 'Benvenuti');
+          setWelcomeText(defaultGreeting);
           setIsGreetingVisible(true);
         }, 200);
         window.clearInterval(intervalId);
@@ -45,9 +50,9 @@ const HeroSection = () => {
 
       setIsGreetingVisible(false);
       window.setTimeout(() => {
-        index = (index + 1) % languages.length;
-        const key = languages[index];
-        setWelcomeText(map[key] ?? 'Benvenuti');
+        index = (index + 1) % heroRotationOrder.length;
+        const key = heroRotationOrder[index];
+        setWelcomeText(greetingMap[key] ?? defaultGreeting);
         setIsGreetingVisible(true);
       }, 200);
 
@@ -57,7 +62,7 @@ const HeroSection = () => {
     return () => {
       window.clearInterval(intervalId);
     };
-  }, [i18n.language]);
+  }, [greetingMap, i18n.language]);
 
   const handleScrollToRooms = () => {
     const el = document.getElementById('rooms');
@@ -66,10 +71,13 @@ const HeroSection = () => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center">
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
+      <div className="absolute inset-0 overflow-hidden">
+        <img
+          src={heroImage}
+          alt="Reception area of Lorenzo & Lorenzo"
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
         <div className="absolute inset-0 bg-primary/70 backdrop-blur-sm" />
       </div>
 
@@ -114,10 +122,10 @@ const HeroSection = () => {
               </button>
               {' '}
               <a 
-                href="mailto:lorenzoelorenzo@libero.it" 
+                href={`mailto:${email}`} 
                 className="font-medium hover:text-primary-foreground transition-colors"
               >
-                lorenzoelorenzo@libero.it
+                {email}
               </a>
             </p>
           </div>
@@ -130,7 +138,7 @@ const HeroSection = () => {
         className="group absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-xs md:text-sm text-primary-foreground/80"
       >
         <span className="uppercase tracking-[0.3em] text-[0.7rem]">
-          Scroll to rooms
+          {t('hero.scrollHint')}
         </span>
         <span className="block h-6 w-px bg-primary-foreground/40 group-hover:bg-primary-foreground transition-colors" />
       </button>

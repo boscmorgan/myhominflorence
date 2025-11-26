@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import hostsImg from '@/assets/hosts.png';
+import hostsPhoto from '@/assets/hosts.jpg';
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -16,7 +16,7 @@ const AboutSection = () => {
 
         <div className="mt-10 flex flex-col md:flex-row items-center gap-6 rounded-3xl border border-border bg-muted/20 p-6">
           <img
-            src={hostsImg}
+            src={hostsPhoto}
             alt={t('about.hostsAlt')}
             className="w-24 h-24 rounded-full object-cover border border-border shadow-sm"
           />

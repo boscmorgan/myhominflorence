@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import hostsPhoto from '@/assets/hosts.jpg';
 
 const HostsSection = () => {
   const { t } = useTranslation();
@@ -27,6 +28,14 @@ const HostsSection = () => {
           </div>
 
           <div className="space-y-4 md:text-right">
+            <div className="overflow-hidden rounded-3xl border border-border shadow-sm">
+              <img
+                src={hostsPhoto}
+                alt={t('about.hostsAlt')}
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
             <p className="text-sm font-semibold text-teal">
               {t('hosts.rating')}
             </p>

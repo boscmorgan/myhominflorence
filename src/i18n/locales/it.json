@@ -1,0 +1,210 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "Chi siamo",
+    "rooms": "Camere",
+    "location": "Posizione",
+    "amenities": "Servizi",
+    "contact": "Contatti",
+    "language": "Lingua",
+    "logoAlt": "Marchio Lorenzo & Lorenzo",
+    "tagline": "Camere e appartamenti",
+    "menuToggle": "Mostra o nascondi il menu di navigazione"
+  },
+  "hero": {
+    "welcome": "Benvenuti a Firenze",
+    "mainTitle": "camere e appartamenti a San Niccolò, Firenze",
+    "valueProp": "Sentiti a casa nelle nostre camere e appartamenti completamente arredati a San Niccolò, a pochi passi da Ponte Vecchio: soggiorni confortevoli e convenienti in un'atmosfera rilassata e giovanile.",
+    "ratingBadge": "Valutazione 4,68 • Oltre 1.700 recensioni",
+    "selfCheckInBadge": "Check-in automatico e deposito bagagli",
+    "locationBadge": "San Niccolò • vicino a Ponte Vecchio",
+    "checkRooms": "Scopri le camere",
+    "writeUs": "oppure scrivici",
+    "scrollHint": "Scorri fino alle camere",
+    "greetings": {
+      "it": "Benvenuti",
+      "en": "Welcome",
+      "es": "Bienvenidos",
+      "ru": "Добро пожаловать",
+      "zh": "欢迎"
+    }
+  },
+  "about": {
+    "title": "Chi siamo",
+    "description": "Prenota ora e immergiti in un modo diverso di visitare Firenze, sentendoti come a casa. Le nostre camere e appartamenti completamente arredati offrono un soggiorno conveniente nello storico quartiere di San Niccolò, a pochi passi da Ponte Vecchio.\nLorenzo e Lorenzo ospitano con il calore di amici di lunga data, creando un'atmosfera semplice e giovanile dove gli ospiti sono accolti come una famiglia, circondati da caffè, osterie, pizzerie, panifici, gallerie d'arte e negozi locali che catturano il vero spirito fiorentino.",
+    "snippet": "Incontra \"Il Bello\" e \"Il Vagge\", due amici di lunga data che hanno trasformato il loro appartamento a San Niccolò in un accogliente bed & breakfast per viaggiatori moderni.",
+    "meetHostsLink": "Conosci Il Bello & Il Vagge",
+    "hostsAlt": "Lorenzo & Lorenzo"
+  },
+  "neighborhood": {
+    "title": "Scopri il nostro quartiere",
+    "description": "Soggiorna a San Niccolò, uno storico quartiere all'interno delle antiche mura di Firenze, a pochi passi dall'Arno e dal Ponte Vecchio, ricco di caffè, osterie, gallerie d'arte e piccoli negozi locali. Qui si trovano la nostra reception e la sede principale, anche se gestiamo camere e appartamenti in tutta Firenze, quindi tutte le distanze a piedi indicate di seguito fanno riferimento a questa base in San Niccolò.",
+    "mapLink": "Visualizza sulla mappa",
+    "chips": {
+      "ponteVecchio": "Ponte Vecchio • 10 min a piedi",
+      "michelangelo": "Piazzale Michelangelo • 8 min a piedi",
+      "boboli": "Giardino di Boboli • 15 min a piedi",
+      "uffizi": "Uffizi • 12 min a piedi"
+    },
+    "images": {
+      "gallery": "Strada soleggiata a San Niccolò",
+      "piazza": "Piazza di Firenze vicino all'Arno"
+    }
+  },
+  "rooms": {
+    "title": "Camere e appartamenti",
+    "description": "Ogni camera e appartamento è progettato con cura con arredi vintage italiani, combinando comfort e carattere, così potrai sentirti a casa mentre scopri Firenze.",
+    "fromPriceLabel": "A partire da €{{price}} / notte",
+    "photosLabel": "{{count}} foto",
+    "guestsLabel": "ospite",
+    "guestsLabelPlural": "ospiti",
+    "viewOnAirbnb": "Visualizza su Airbnb",
+    "distanceLabel": "Distanza dal centro: {{distance}} km",
+    "contactHost": "Contattaci",
+    "badges": {
+      "couples": "Perfetto per le coppie",
+      "spacious": "Molto spazioso e luminoso",
+      "terrace": "Terrazza privata e cucina"
+    },
+    "list": [
+      {
+        "id": "executive",
+        "title": "Doppia esecutiva",
+        "description": "Un soggiorno regale con la nostra spaziosa camera Executive dotata di un letto comodo e un bagno moderno.",
+        "size": "20 mq"
+      },
+      {
+        "id": "deluxe",
+        "title": "Doppia Deluxe",
+        "description": "Ti meriti un po' di coccole in più. La nostra camera doppia Deluxe aggiunge spazio extra, luce naturale e un'accogliente sedia per rilassarsi.",
+        "size": "22 mq"
+      },
+      {
+        "id": "penthouse",
+        "title": "Attico",
+        "description": "Cerchi un soggiorno straordinario? Il nostro attico è un appartamento su misura con terrazza privata e cucina.",
+        "size": "Tre camere da letto • 19 m² ciascuna"
+      }
+    ],
+    "features": {
+      "sizeLabel": "Dimensione media della stanza: {{size}}",
+      "climateControl": "Controllo del clima",
+      "privateBathroom": "Bagno privato con doccia",
+      "desk": "Scrivania",
+      "wifi": "Wi‑Fi"
+    },
+    "platforms": {
+      "airbnb": "Airbnb",
+      "booking": "Booking.com"
+    }
+  },
+  "amenities": {
+    "title": "Tutto ciò di cui hai bisogno per il tuo soggiorno",
+    "subtitle": "Elementi essenziali, comfort e piccoli extra che fanno sentire Lorenzo e Lorenzo come a casa.",
+    "groups": {
+      "essentials": "Essenziali",
+      "comfort": "Comfort",
+      "extras": "Extra"
+    },
+    "wifi": "Wi‑Fi",
+    "luggage": "Deposito bagagli",
+    "checkin": "Check-in flessibile",
+    "kitchen": "Cucina e soggiorno",
+    "toiletries": "Articoli da toeletta",
+    "shower": "Doccia privata",
+    "towels": "Asciugamani",
+    "hairdryer": "Asciugacapelli",
+    "ac": "Aria condizionata",
+    "iron": "Ferro",
+    "piano": "Pianoforte",
+    "books": "Biblioteca e libri"
+  },
+  "cta": {
+    "title": "Pronti a vivere Firenze?",
+    "description": "Prenota il tuo soggiorno con noi e scopri il cuore autentico di Firenze. Non vediamo l'ora di darti il ​​benvenuto.",
+    "button": "Prenota ora"
+  },
+  "hosts": {
+    "title": "I tuoi host",
+    "subtitle": "Due amici che hanno fatto del loro amore per Firenze una casa per i viaggiatori.",
+    "names": "Lorenzo & Lorenzo",
+    "role": "Host",
+    "rating": "Valutazione 4,68 • Oltre 4.277 recensioni",
+    "bio": "La gente del posto li conosce come “Il Bello” e “Il Vagge”: Lorenzo Bellini, con il viso toscano abbronzato e le grandi mani che aggiustano di tutto, dagli ascensori alle situazioni difficili, e Lorenzo Vaggelli, il biondo dagli occhi timidi e la barba incolta che attraversa allegramente Firenze a piedi per andare a trovare gli amici. Insieme gestiscono il loro bed & breakfast San Niccolò nelle stesse strade dell'Oltrarno dove tutto ha avuto inizio – un piccolo borgo dentro la città, tra l'Arno e la salita per San Miniato, costellato di caffè, panifici, gallerie e trattorie – accogliendo gli ospiti con il calore e l'umorismo dei veri fiorentini.",
+    "born": "Nato negli anni '80",
+    "work": "Proprietari di case vacanze",
+    "lives": "Con sede a Firenze, Italia"
+  },
+  "parking": {
+    "title": "Il Parcheggio di Lorenzo e Lorenzo",
+    "subtitle": "Parcheggio esclusivo per gli ospiti appena fuori dalla ZTL.",
+    "intro": "Per facilitare il vostro soggiorno offriamo ai nostri ospiti esclusive e comode possibilità di parcheggio. Il nostro parcheggio è appena fuori dalla zona a traffico limitato (ZTL) di Firenze, quindi puoi arrivare in auto ed esplorare la città a piedi.",
+    "tableTitle": "Tariffa",
+    "daily": "Giornaliero",
+    "weekly": "Settimanale",
+    "dailyPrice": "€ 20 al giorno",
+    "weeklyPrice": "€ 120 a settimana",
+    "contact": "Stai pianificando la tua visita? Contatta lorenzoelorenzo@libero.it per disponibilità e prenotazioni di parcheggio.",
+    "contactCta": "Richiedi disponibilità parcheggio",
+    "bulletsTitle": "Perché il nostro parcheggio funziona bene",
+    "items": {
+      "location": "Posizione strategica appena fuori dalla ZTL, vicina al centro storico.",
+      "pricing": "Prezzi competitivi sia che resti poche notti o più giorni.",
+      "booking": "Ti consigliamo di prenotare in anticipo, soprattutto durante l'alta stagione, per assicurarti il posto."
+    },
+    "nearbyPlaces": {
+      "michelangelo": "Piazzale Michelangelo",
+      "boboli": "Giardino di Boboli",
+      "pitti": "Palazzo Pitti",
+      "uffizi": "Uffizi"
+    }
+  },
+  "faq": {
+    "title": "Buono a sapersi",
+    "subtitle": "Alcune rapide risposte alle domande che gli ospiti pongono più spesso.",
+    "items": {
+      "lateCheckin": {
+        "q": "Posso arrivare tardi?",
+        "a": "Sì, gli arrivi tardivi sono possibili. Facci sapere l'orario previsto e ti invieremo noi stessi tutte le istruzioni."
+      },
+      "luggage": {
+        "q": "Posso lasciare i miei bagagli?",
+        "a": "Di solito possiamo depositare i bagagli prima del check-in o dopo il check-out. Fatecelo sapere in anticipo in modo che possiamo organizzarlo."
+      },
+      "parking": {
+        "q": "Hai un parcheggio?",
+        "a": "Sì. Offriamo un parcheggio privato appena fuori dalla ZTL con tariffe giornaliere e settimanali. Consulta la sezione Parcheggi per i dettagli."
+      },
+      "touristTax": {
+        "q": "Esiste una tassa di soggiorno a Firenze?",
+        "a": "Gli ospiti pagano una tassa di soggiorno a partire da € 6,00 per persona per notte, fino a 7 notti, come parte della prenotazione. Lo stabilisce il Comune di Firenze. Chiamaci per dettagli specifici."
+      }
+    }
+  },
+  "footer": {
+    "contact": "Contatti",
+    "address": "Via di San Niccolò 63",
+    "city": "50125 — Firenze, Toscana, Italia",
+    "phones": [
+      "+39 055 2638097",
+      "+39 339 1554694",
+      "+39 389 0108370"
+    ],
+    "email": "lorenzoelorenzo@libero.it",
+    "whatsapp": "Contattaci su WhatsApp",
+    "propertyCTA": {
+      "intro": "Sei proprietario di una struttura e ti serve la gestione?",
+      "invite": "Contattaci e scopri il nostro modo di lavorare",
+      "connector": "e guarda il nostro deck",
+      "approachLinkLabel": "qui",
+      "deckLinkLabel": "qui"
+    },
+    "touristTaxNote": "Gli ospiti che prenotano soggiorni a Firenze pagano la tassa di soggiorno comunale a partire da € 6,00 per persona per notte (fino a 7 notti). Chiamaci per i dettagli.",
+    "copyright": "© 2025 Lorenzo & Lorenzo. Tutti i diritti riservati."
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "description": "La pagina che stavi cercando non è qui o potrebbe essere stata spostata.",
+    "cta": "Torna alla home"
+  }
+}

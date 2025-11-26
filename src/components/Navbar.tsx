@@ -3,7 +3,6 @@ import { Menu, X, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import logo from '@/assets/logo_002.png';
-import { BOOKING_URL } from '@/lib/booking';
 
 const languages = [
   { code: 'en', label: 'EN' },
@@ -170,13 +169,13 @@ const Navbar = () => {
             onClick={() => scrollToSection('hero')}
             className="flex items-center gap-3"
           >
-            <img src={logo} alt="Lorenzo & Lorenzo" className="h-12 w-auto" />
+            <img src={logo} alt={t('nav.logoAlt')} className="h-12 w-auto" />
             <div className="text-left text-black w-fit flex flex-col gap-0">
               <span className="font-semibold text-lg leading-none block">
                 Lorenzo &amp; Lorenzo
               </span>
               <span className="block text-xs tracking-[0.08em] uppercase leading-tight">
-                Rooms &amp; Apartments
+                {t('nav.tagline')}
               </span>
             </div>
           </button>
@@ -250,11 +249,9 @@ const Navbar = () => {
               <Button
                 className="bg-teal text-primary-foreground hover:bg-teal/90 px-5"
                 size="default"
-                asChild
+                onClick={() => scrollToSection('rooms')}
               >
-                <a href={BOOKING_URL} target="_blank" rel="noreferrer">
-                  {t('cta.button')}
-                </a>
+                {t('cta.button')}
               </Button>
             </div>
 
@@ -262,7 +259,7 @@ const Navbar = () => {
               variant="ghost"
               size="icon"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
+              aria-label={t('nav.menuToggle')}
               className="border border-border bg-background/70 text-foreground/80 backdrop-blur-sm transition-colors duration-200 hover:bg-foreground/5 hover:text-foreground focus-visible:ring-teal/70 md:hidden"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -291,11 +288,9 @@ const Navbar = () => {
             <Button
               className="mt-2 w-full bg-teal text-primary-foreground hover:bg-teal/90 md:hidden"
               size="lg"
-              asChild
+              onClick={() => scrollToSection('rooms')}
             >
-              <a href={BOOKING_URL} target="_blank" rel="noreferrer">
-                {t('cta.button')}
-              </a>
+              {t('cta.button')}
             </Button>
           </div>
         )}

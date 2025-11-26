@@ -1,14 +1,20 @@
 import { useTranslation } from 'react-i18next';
 import ImageCarousel from './ImageCarousel';
-import neighborhood1 from '@/assets/neighborhood-1.jpg';
-import neighborhood2 from '@/assets/neighborhood-2.jpg';
+import quartiere1 from '@/assets/quartiere_1.jpg';
+import quartiere2 from '@/assets/quartiere_2.jpg';
+import quartiere3 from '@/assets/quartiere_3.jpg';
+import quartiere4 from '@/assets/quartiere_4.jpg';
+import quartiere5 from '@/assets/quartiere_5.jpg';
 
 const NeighborhoodSection = () => {
   const { t } = useTranslation();
 
   const images = [
-    { src: neighborhood1, alt: 'Florence neighborhood' },
-    { src: neighborhood2, alt: 'Florence piazza' },
+    { src: quartiere1, alt: t('neighborhood.images.gallery') },
+    { src: quartiere2, alt: t('neighborhood.images.gallery') },
+    { src: quartiere3, alt: t('neighborhood.images.gallery') },
+    { src: quartiere4, alt: t('neighborhood.images.gallery') },
+    { src: quartiere5, alt: t('neighborhood.images.piazza') }
   ];
 
   return (
@@ -22,7 +28,7 @@ const NeighborhoodSection = () => {
         </p>
         <div className="text-center mb-8">
           <a
-            href="https://maps.google.com/?q=San+Niccol%C3%B2,+Firenze"
+            href="https://maps.app.goo.gl/ZZRadRGhYZgpDtgs9"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold text-teal underline underline-offset-4"
