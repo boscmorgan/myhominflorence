@@ -32,7 +32,7 @@
   "about": {
     "title": "Chi siamo",
     "description": "Prenota ora e immergiti in un modo diverso di visitare Firenze, sentendoti come a casa. Le nostre camere e appartamenti completamente arredati offrono un soggiorno conveniente nello storico quartiere di San Niccolò, a pochi passi da Ponte Vecchio.\nLorenzo e Lorenzo ospitano con il calore di amici di lunga data, creando un'atmosfera semplice e giovanile dove gli ospiti sono accolti come una famiglia, circondati da caffè, osterie, pizzerie, panifici, gallerie d'arte e negozi locali che catturano il vero spirito fiorentino.",
-    "snippet": "Incontra \"Il Bello\" e \"Il Vagge\", due amici di lunga data che hanno trasformato il loro appartamento a San Niccolò in un accogliente bed & breakfast per viaggiatori moderni.",
+    "snippet": "Incontra \"Il Bello\" e \"Il Vagge\", due amici di lunga data che hanno trasformato il loro appartamento a San Niccolò in un accogliente guest house per viaggiatori moderni.",
     "meetHostsLink": "Conosci Il Bello & Il Vagge",
     "hostsAlt": "Lorenzo & Lorenzo"
   },
@@ -69,34 +69,73 @@
     "list": [
       {
         "id": "executive",
-        "title": "Doppia esecutiva",
-        "description": "Un soggiorno regale con la nostra spaziosa camera Executive dotata di un letto comodo e un bagno moderno.",
-        "size": "20 mq"
+        "title": "Camera doppia con bagno privato esterno",
+        "description": "Camera di 14 m² con bagno privato esterno, perfetta per chi desidera risparmiare senza rinunciare alla privacy.",
+        "size": "14 m²"
       },
       {
         "id": "deluxe",
-        "title": "Doppia Deluxe",
-        "description": "Ti meriti un po' di coccole in più. La nostra camera doppia Deluxe aggiunge spazio extra, luce naturale e un'accogliente sedia per rilassarsi.",
-        "size": "22 mq"
+        "title": "Appartamento Deluxe",
+        "description": "Un appartamento di 65 m² pensato per ospitare fino a quattro persone, con una camera da letto dotata di un grande letto matrimoniale e un soggiorno luminoso con comodo divano letto.",
+        "size": "65 m²"
       },
       {
         "id": "penthouse",
-        "title": "Attico",
-        "description": "Cerchi un soggiorno straordinario? Il nostro attico è un appartamento su misura con terrazza privata e cucina.",
-        "size": "Tre camere da letto • 19 m² ciascuna"
+        "title": "Monolocale",
+        "description": "Un monolocale di 45 m² che accoglie fino a quattro persone: la camera offre un grande letto matrimoniale mentre il soggiorno dispone di un divano letto, più angolo cottura e bagno privato.",
+        "size": "45 m²"
+      },
+      {
+        "id": "torretta",
+        "title": "Appartamento Torretta sull'Arno",
+        "description": "Un loft vista Arno per quattro ospiti con due letti, cucinotto e postazione di lavoro affacciata sul fiume.",
+        "size": "45 m²"
+      },
+      {
+        "id": "rifredi",
+        "title": "Casa Fabbri a Rifredi",
+        "description": "Appartamento luminoso a Rifredi per quattro persone, con cucina completa e collegamenti tram veloci per il centro.",
+        "size": "55 m²"
+      },
+      {
+        "id": "sanFrediano",
+        "title": "Casa San Frediano 36",
+        "description": "Accogliente appartamento in Oltrarno vicino a San Frediano, perfetto per scoprire caffè e botteghe artigiane con gli amici.",
+        "size": "50 m²"
+      },
+      {
+        "id": "sanNiccoloStudio",
+        "title": "Studio San Niccolò",
+        "description": "Monolocale accogliente per due in San Niccolò con angolo cottura e comfort moderni a pochi passi dall'Arno.",
+        "size": "28 m²"
       }
     ],
     "features": {
       "sizeLabel": "Dimensione media della stanza: {{size}}",
       "climateControl": "Controllo del clima",
-      "privateBathroom": "Bagno privato con doccia",
+      "privateBathroom": "Bagno privato",
       "desk": "Scrivania",
-      "wifi": "Wi‑Fi"
+      "wifi": "Wi‑Fi",
+      "entireApartment": "Intero appartamento",
+      "flatScreenTv": "TV a schermo piatto",
+      "freeWifi": "Wi‑Fi gratuito",
+      "airConditioning": "Aria condizionata",
+      "privateKitchen": "Cucina privata",
+      "privateKitchenette": "Angolo cottura privato",
+      "kitchenware": "Utensili da cucina",
+      "bathOrShower": "Vasca o doccia",
+      "doubleBed": "1 letto matrimoniale",
+      "riverView": "Vista sul fiume",
+      "kitchen": "Cucina",
+      "workspace": "Spazio di lavoro dedicato",
+      "parking": "Parcheggio gratuito in loco"
     },
     "platforms": {
       "airbnb": "Airbnb",
       "booking": "Booking.com"
-    }
+    },
+    "slideStatus": "{{current}} di {{total}}",
+    "slideStatusAria": "Slide {{current}} di {{total}}"
   },
   "amenities": {
     "title": "Tutto ciò di cui hai bisogno per il tuo soggiorno",

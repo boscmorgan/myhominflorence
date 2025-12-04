@@ -42,6 +42,14 @@ export default {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },
+        airbnb: {
+          DEFAULT: "hsl(var(--airbnb))",
+          foreground: "hsl(var(--airbnb-foreground))",
+        },
+        booking: {
+          DEFAULT: "hsl(var(--booking))",
+          foreground: "hsl(var(--booking-foreground))",
+        },
         teal: "hsl(var(--teal))",
         lavender: "hsl(var(--lavender))",
         brown: "hsl(var(--brown))",

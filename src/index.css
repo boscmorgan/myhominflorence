@@ -33,6 +33,10 @@ All colors MUST be HSL.
     --teal: 191 94% 24%; /* #046276 turquoise */
     --lavender: 244 52% 71%; /* #9692DA lavender */
     --brown: 36 16% 36%; /* #6C604E brown */
+    --airbnb: 358.18 100% 67.65%;
+    --airbnb-foreground: 60 25% 95%;
+    --booking: 215.16 100% 25.10%;
+    --booking-foreground: 60 25% 95%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -81,6 +85,10 @@ All colors MUST be HSL.
 
     --accent: 56 75% 53%;
     --accent-foreground: 75 8% 19%;
+    --airbnb: 358.18 100% 67.65%;
+    --airbnb-foreground: 60 25% 95%;
+    --booking: 215.16 100% 25.10%;
+    --booking-foreground: 60 25% 95%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
@@ -106,5 +114,7 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-size: 0.9375rem;
+    line-height: 1.5;
   }
 }

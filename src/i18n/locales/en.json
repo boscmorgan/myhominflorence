@@ -32,7 +32,7 @@
   "about": {
     "title": "About Us",
     "description": "Book now and immerse yourself in a different way of visiting Florence – by feeling right at home. Our fully furnished rooms and apartments offer an affordable stay in the historic San Niccolò neighborhood, just a short walk from Ponte Vecchio.\nLorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, youthful atmosphere where guests are welcomed like family, surrounded by cafés, osterie, pizzerie, bakeries, art galleries and local shops that capture the real Florentine spirit.",
-    "snippet": "Meet “Il Bello” and “Il Vagge” — two longtime friends who turned their San Niccolò apartment into a welcoming bed & breakfast for modern travelers.",
+    "snippet": "Meet “Il Bello” and “Il Vagge” — two longtime friends who turned their San Niccolò apartment into a welcoming guest house for modern travelers.",
     "meetHostsLink": "Meet Il Bello & Il Vagge",
     "hostsAlt": "Lorenzo & Lorenzo hosts"
   },
@@ -69,34 +69,73 @@
     "list": [
       {
         "id": "executive",
-        "title": "Executive Double",
-        "description": "A royal stay with our spacious Executive room featuring a comfy bed and modern bathroom.",
-        "size": "20 m²"
+        "title": "Double Room with Private External Bathroom",
+        "description": "A 14 m² double room with its own private external bathroom just across the hall, ideal for couples who want an affordable stay with privacy.",
+        "size": "14 m²"
       },
       {
         "id": "deluxe",
-        "title": "Deluxe Double",
-        "description": "You deserve a little extra pampering. Our Deluxe Double adds extra space, natural light and a cozy chair to unwind.",
-        "size": "22 m²"
+        "title": "Deluxe Apartment",
+        "description": "A 65 m² apartment designed for up to four guests, with Bedroom 1 featuring a large double bed and the living room offering a comfortable sofa bed for extra travelers.",
+        "size": "65 m²"
       },
       {
         "id": "penthouse",
-        "title": "Penthouse",
-        "description": "Looking for an extraordinary stay? Our Penthouse is a tailored apartment with a private terrace and kitchen.",
-        "size": "Three bedrooms • 19 m² each"
+        "title": "Studio Apartment",
+        "description": "A 45 m² studio apartment that sleeps up to four guests with Bedroom 1 offering a large double bed and the living room providing a comfy sofa bed, complete with kitchenette and private bath.",
+        "size": "45 m²"
+      },
+      {
+        "id": "torretta",
+        "title": "Torretta sull'Arno Apartment",
+        "description": "A river-view loft just above the Arno with room for four guests, two beds, a kitchenette and a workspace overlooking Florence.",
+        "size": "45 m²"
+      },
+      {
+        "id": "rifredi",
+        "title": "Casa Fabbri in Rifredi",
+        "description": "A bright family apartment in Rifredi with room for four, easy tram connections, and a full kitchen to cook like a local.",
+        "size": "55 m²"
+      },
+      {
+        "id": "sanFrediano",
+        "title": "Casa San Frediano 36",
+        "description": "A welcoming Oltrarno apartment near San Frediano, perfect for exploring cafés and artisan shops with friends.",
+        "size": "50 m²"
+      },
+      {
+        "id": "sanNiccoloStudio",
+        "title": "Studio San Niccolò",
+        "description": "A cozy studio for two in San Niccolò with kitchenette and modern comforts steps from the Arno.",
+        "size": "28 m²"
       }
     ],
     "features": {
       "sizeLabel": "Average room size: {{size}}",
       "climateControl": "Climate control",
-      "privateBathroom": "Private bathroom with shower",
+      "privateBathroom": "Private bathroom",
       "desk": "Desk",
-      "wifi": "Wi‑Fi"
+      "wifi": "Wi‑Fi",
+      "entireApartment": "Entire apartment",
+      "flatScreenTv": "Flat-screen TV",
+      "freeWifi": "Free Wi‑Fi",
+      "airConditioning": "Air conditioning",
+      "privateKitchen": "Private kitchen",
+      "privateKitchenette": "Private kitchenette",
+      "kitchenware": "Kitchenware",
+      "bathOrShower": "Bath or shower",
+      "doubleBed": "1 double bed",
+      "riverView": "River view",
+      "kitchen": "Kitchen",
+      "workspace": "Dedicated workspace",
+      "parking": "Free parking on premises"
     },
     "platforms": {
       "airbnb": "Airbnb",
       "booking": "Booking.com"
-    }
+    },
+    "slideStatus": "{{current}} of {{total}}",
+    "slideStatusAria": "Slide {{current}} of {{total}}"
   },
   "amenities": {
     "title": "Everything You Need for Your Stay",

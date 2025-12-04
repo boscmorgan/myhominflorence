@@ -26,13 +26,13 @@ const ParkingSection = () => {
         </p>
 
         <div className="rounded-3xl bg-background border border-border/60 p-6 md:p-10 shadow-lg">
-          <div className="grid gap-8 md:grid-cols-[1.2fr,0.8fr]">
+          <div className="grid gap-8 lg:grid-cols-[1.2fr,0.8fr]">
             <div className="space-y-6">
               <p className="text-base md:text-lg text-foreground leading-relaxed">
                 {t('parking.intro')}
               </p>
 
-              <div className="grid gap-4 sm:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-2">
                 {benefits.map((benefit) => {
                   const Icon = benefit.icon;
                   return (
@@ -49,7 +49,7 @@ const ParkingSection = () => {
                 })}
               </div>
 
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap justify-center gap-2 md:justify-start">
                 <span className="inline-flex items-center px-3 py-1 rounded-full bg-muted/30 text-xs font-medium">
                   {t('parking.nearbyPlaces.michelangelo')}
                 </span>
@@ -71,11 +71,11 @@ const ParkingSection = () => {
                   {t('parking.tableTitle')}
                 </p>
                 <dl className="mt-4 space-y-4 text-base">
-                  <div className="flex items-center justify-between">
+                  <div className="flex flex-col gap-1 rounded-2xl bg-muted/20 p-4 sm:flex-row sm:items-center sm:justify-between sm:bg-transparent sm:p-0">
                     <dt className="font-semibold text-foreground">{t('parking.daily')}</dt>
                     <dd className="text-lg font-semibold">{t('parking.dailyPrice')}</dd>
                   </div>
-                  <div className="flex items-center justify-between border-t border-border/60 pt-4">
+                  <div className="flex flex-col gap-1 border-t border-border/60 pt-4 sm:flex-row sm:items-center sm:justify-between">
                     <dt className="font-semibold text-foreground">{t('parking.weekly')}</dt>
                     <dd className="text-lg font-semibold">{t('parking.weeklyPrice')}</dd>
                   </div>
@@ -91,7 +91,7 @@ const ParkingSection = () => {
 
               <a
                 href={`mailto:${contactEmail}`}
-                className="inline-flex items-center justify-center rounded-2xl bg-teal px-4 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-teal/90"
+                className="inline-flex w-full items-center justify-center rounded-2xl bg-teal px-4 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-teal/90 sm:w-auto"
               >
                 {t('parking.contactCta')}
               </a>

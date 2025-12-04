@@ -32,7 +32,7 @@
   "about": {
     "title": "关于我们",
     "description": "立即预订，以不同的方式游览佛罗伦萨 - 享受宾至如归的感觉。我们设施齐全的客房和公寓位于历史悠久的圣尼科洛 (San Niccolò) 街区，距离老桥 (Ponte Vecchio) 仅几步之遥，为您提供经济实惠的住宿体验。\nLorenzo & Lorenzo 以老朋友般的热情接待客人，营造出一种简单、年轻的氛围，让客人像家人一样受到欢迎，周围有咖啡馆、小餐馆、比萨饼店、面包店、艺术画廊和当地商店，体现了真正的佛罗伦萨精神。",
-    "snippet": "来认识一下“Il Bello”和“Il Vagge”——这两位老朋友将他们的圣尼科洛公寓变成了欢迎现代旅行者的住宿加早餐酒店。",
+    "snippet": "来认识一下“Il Bello”和“Il Vagge”——这两位老朋友将他们的圣尼科洛公寓变成了欢迎现代旅行者的家庭式旅馆。",
     "meetHostsLink": "认识 Il Bello 与 Il Vagge",
     "hostsAlt": "Lorenzo & Lorenzo"
   },
@@ -69,34 +69,73 @@
     "list": [
       {
         "id": "executive",
-        "title": "行政双人床",
-        "description": "我们宽敞的行政房配有舒适的床和现代化的浴室，为您带来皇家般的住宿体验。",
-        "size": "20平方米"
+        "title": "带私人外部浴室的双人房",
+        "description": "14 平方米的双人房，配有专属的外部私人浴室，适合想节省预算又注重隐私的旅客。",
+        "size": "14 平方米"
       },
       {
         "id": "deluxe",
-        "title": "豪华双人床",
-        "description": "您值得得到一点额外的呵护。我们的豪华双人床增加了额外的空间、自然光线和舒适的椅子供您放松。",
-        "size": "22平方米"
+        "title": "豪华公寓",
+        "description": "65 平方米的公寓可容纳最多 4 位客人：卧室配有一张大床，明亮的起居室则提供舒适的沙发床，适合同行旅伴。",
+        "size": "65 平方米"
       },
       {
         "id": "penthouse",
-        "title": "顶层公寓",
-        "description": "寻找非凡的住宿体验？我们的顶层公寓是一间量身定制的公寓，设有私人露台和厨房。",
-        "size": "三间卧室 • 每间面积 19 平方米"
+        "title": "一室公寓",
+        "description": "45 平方米的一室公寓，可容纳 4 位客人：卧室配有一张大号双人床，起居室配有一张舒适的沙发床，并配备小厨房和私人浴室。",
+        "size": "45 平方米"
+      },
+      {
+        "id": "torretta",
+        "title": "Torretta sull'Arno 公寓",
+        "description": "一间俯瞰阿尔诺河的阁楼，可容纳 4 位旅客，配有两张床、小厨房和带窗的工作区。",
+        "size": "45 平方米"
+      },
+      {
+        "id": "rifredi",
+        "title": "Casa Fabbri（Rifredi）",
+        "description": "位于 Rifredi 的明亮家庭公寓，可容纳 4 人，配备完整厨房，乘电车即可快速到达市中心。",
+        "size": "55 平方米"
+      },
+      {
+        "id": "sanFrediano",
+        "title": "Casa San Frediano 36",
+        "description": "位于奥特拉诺、靠近 San Frediano 的温馨公寓，非常适合与朋友一起探索咖啡馆和手工艺小店。",
+        "size": "50 平方米"
+      },
+      {
+        "id": "sanNiccoloStudio",
+        "title": "San Niccolò 单间公寓",
+        "description": "San Niccolò 的温馨单间，适合两人，设有小厨房和现代化设施，距阿尔诺河仅几步之遥。",
+        "size": "28 平方米"
       }
     ],
     "features": {
       "sizeLabel": "平均房间面积：{{size}}",
       "climateControl": "气候控制",
-      "privateBathroom": "带淋浴的私人浴室",
-      "desk": "桌子",
-      "wifi": "Wi‑Fi"
+      "privateBathroom": "私人浴室",
+      "desk": "书桌",
+      "wifi": "Wi‑Fi",
+      "entireApartment": "整套公寓",
+      "flatScreenTv": "平板电视",
+      "freeWifi": "免费 Wi‑Fi",
+      "airConditioning": "空调",
+      "privateKitchen": "私人厨房",
+      "privateKitchenette": "私人小厨房",
+      "kitchenware": "厨房用具",
+      "bathOrShower": "浴缸或淋浴",
+      "doubleBed": "1 张双人床",
+      "riverView": "河景",
+      "kitchen": "厨房",
+      "workspace": "专用工作空间",
+      "parking": "物业内免费停车"
     },
     "platforms": {
       "airbnb": "Airbnb",
       "booking": "Booking.com"
-    }
+    },
+    "slideStatus": "{{current}} / {{total}}",
+    "slideStatusAria": "第 {{current}} 张幻灯片，共 {{total}} 张"
   },
   "amenities": {
     "title": "住宿所需的一切",
