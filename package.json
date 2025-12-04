@@ -44,7 +44,6 @@
     "clsx": "^2.1.1",
     "cmdk": "^1.1.1",
     "date-fns": "^3.6.0",
-    "docker": "^1.0.0",
     "embla-carousel-react": "^8.6.0",
     "i18next": "^25.6.3",
     "input-otp": "^1.4.2",
@@ -65,8 +64,8 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "@myhomeinflorence/build-shim": "file:./tools/build-shim",
     "@eslint/js": "^9.32.0",
+    "@myhomeinflorence/build-shim": "file:./tools/build-shim",
     "@tailwindcss/typography": "^0.5.16",
     "@types/node": "^22.16.5",
     "@types/react": "^18.3.23",
