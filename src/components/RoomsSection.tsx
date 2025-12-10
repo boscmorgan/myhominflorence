@@ -180,24 +180,24 @@ const RoomsSection = () => {
   };
 
   return (
-    <section id="rooms" className="py-20 px-6 bg-muted/30">
-      <div className="container mx-auto max-w-6xl mb-12">
-        <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+    <section id="rooms" className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-muted/30">
+      <div className="container mx-auto max-w-6xl mb-8 sm:mb-12">
+        <div className="flex flex-col gap-3 sm:gap-4 md:flex-row md:items-end md:justify-between">
           <div className="md:max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 md:mb-2">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 sm:mb-4 md:mb-2">
               {t('rooms.title')}
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
               {t('rooms.description')}
             </p>
           </div>
-          <div className="text-sm text-muted-foreground">
+          <div className="text-xs sm:text-sm text-muted-foreground">
             {t('rooms.photosLabel', { count: rooms.reduce((sum, r) => sum + r.photos, 0) })}
           </div>
         </div>
       </div>
 
-      <div className="relative mx-auto max-w-6xl w-full px-2 sm:px-4">
+      <div className="relative mx-auto max-w-6xl w-full px-1 sm:px-2 md:px-4">
         <Carousel
           className="w-full"
           aria-label="Available rooms carousel"
@@ -211,15 +211,15 @@ const RoomsSection = () => {
           }}
           setApi={setApi}
         >
-          <CarouselContent className="-ml-3 sm:-ml-4 items-stretch">
+          <CarouselContent className="-ml-2 sm:-ml-3 md:-ml-4 items-stretch">
             {rooms.map((room, index) => {
               const isActive = currentIndex === index;
               return (
                 <CarouselItem
                   key={room.id}
                   className={cn(
-                    'pl-3 sm:pl-4 pb-8 basis-[95%] sm:basis-[80%] md:basis-[65%] lg:basis-[50%] flex items-stretch transition-all duration-300',
-                    isActive ? 'scale-100 opacity-100' : 'scale-[0.94] opacity-80'
+                    'pl-2 sm:pl-3 md:pl-4 pb-6 sm:pb-8 basis-[92%] sm:basis-[80%] md:basis-[65%] lg:basis-[50%] flex items-stretch transition-all duration-300',
+                    isActive ? 'scale-100 opacity-100' : 'scale-[0.96] sm:scale-[0.94] opacity-85 sm:opacity-80'
                   )}
                 >
                   <button
@@ -234,40 +234,40 @@ const RoomsSection = () => {
               );
             })}
           </CarouselContent>
-          <div className="pointer-events-none absolute inset-y-0 left-0 right-0 flex items-center justify-between px-3 sm:px-6">
+          <div className="pointer-events-none absolute inset-y-0 left-0 right-0 flex items-center justify-between px-1 sm:px-3 md:px-6">
             <Button
               type="button"
               variant="outline"
               size="icon"
               onClick={handlePrev}
-              className="pointer-events-auto h-9 w-9 md:h-11 md:w-11 rounded-full bg-background text-foreground border border-border shadow-lg hover:bg-background/80 -ml-2 sm:-ml-4"
+              className="pointer-events-auto h-8 w-8 sm:h-9 sm:w-9 md:h-11 md:w-11 rounded-full bg-background text-foreground border border-border shadow-lg hover:bg-background/80 active:scale-95 -ml-1 sm:-ml-2 md:-ml-4"
               aria-label="Previous room"
             >
-              <ChevronLeft className="h-4 w-4" />
+              <ChevronLeft className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             </Button>
             <Button
               type="button"
               variant="outline"
               size="icon"
               onClick={handleNext}
-              className="pointer-events-auto h-9 w-9 md:h-11 md:w-11 rounded-full bg-background text-foreground border border-border shadow-lg hover:bg-background/80 -mr-2 sm:-mr-4"
+              className="pointer-events-auto h-8 w-8 sm:h-9 sm:w-9 md:h-11 md:w-11 rounded-full bg-background text-foreground border border-border shadow-lg hover:bg-background/80 active:scale-95 -mr-1 sm:-mr-2 md:-mr-4"
               aria-label="Next room"
             >
-              <ChevronRight className="h-4 w-4" />
+              <ChevronRight className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
             </Button>
           </div>
         </Carousel>
 
-        <div className="mt-8 flex flex-wrap items-center justify-between gap-4 px-2 sm:px-6">
+        <div className="mt-5 sm:mt-8 flex flex-col sm:flex-row flex-wrap items-center justify-between gap-3 sm:gap-4 px-2 sm:px-6">
           <span
-            className="text-sm text-muted-foreground"
+            className="text-xs sm:text-sm text-muted-foreground"
             role="status"
             aria-live="polite"
             aria-label={t('rooms.slideStatusAria', { current: currentIndex + 1, total: slideCount })}
           >
             {t('rooms.slideStatus', { current: currentIndex + 1, total: slideCount })}
           </span>
-          <div className="flex items-center gap-2" role="tablist" aria-label="Select room slide">
+          <div className="flex items-center gap-1.5 sm:gap-2" role="tablist" aria-label="Select room slide">
             {rooms.map((room, index) => (
               <button
                 key={room.id}
@@ -277,7 +277,7 @@ const RoomsSection = () => {
                 aria-selected={currentIndex === index}
                 tabIndex={currentIndex === index ? 0 : -1}
                 className={cn(
-                  'h-2.5 w-8 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-teal',
+                  'h-2 w-5 sm:h-2.5 sm:w-8 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-teal',
                   currentIndex === index ? 'bg-teal scale-110' : 'bg-muted-foreground/40 hover:bg-muted-foreground/70'
                 )}
                 onClick={() => api?.scrollTo(index)}

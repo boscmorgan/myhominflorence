@@ -18,36 +18,36 @@ const NeighborhoodSection = () => {
   ];
 
   return (
-    <section id="location" className="py-20 bg-secondary">
-      <div className="container mx-auto max-w-6xl px-6">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+    <section id="location" className="py-12 sm:py-16 md:py-20 bg-secondary">
+      <div className="container mx-auto max-w-6xl px-4 sm:px-6">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-center">
           {t('neighborhood.title')}
         </h2>
-        <p className="text-lg md:text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-8">
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-5 sm:mb-8">
           {t('neighborhood.description')}
         </p>
-        <div className="text-center mb-8">
+        <div className="text-center mb-5 sm:mb-8">
           <a
             href="https://maps.app.goo.gl/ZZRadRGhYZgpDtgs9"
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-teal underline underline-offset-4"
+            className="inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-teal underline underline-offset-4"
           >
             {t('neighborhood.mapLink')}
           </a>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-3 mb-10">
-          <span className="inline-flex items-center px-4 py-1 rounded-full bg-background/80 text-sm font-medium">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-6 sm:mb-10">
+          <span className="inline-flex items-center px-3 sm:px-4 py-1 rounded-full bg-background/80 text-xs sm:text-sm font-medium">
             {t('neighborhood.chips.ponteVecchio')}
           </span>
-          <span className="inline-flex items-center px-4 py-1 rounded-full bg-background/80 text-sm font-medium">
+          <span className="inline-flex items-center px-3 sm:px-4 py-1 rounded-full bg-background/80 text-xs sm:text-sm font-medium">
             {t('neighborhood.chips.michelangelo')}
           </span>
-          <span className="inline-flex items-center px-4 py-1 rounded-full bg-background/80 text-sm font-medium">
+          <span className="inline-flex items-center px-3 sm:px-4 py-1 rounded-full bg-background/80 text-xs sm:text-sm font-medium">
             {t('neighborhood.chips.boboli')}
           </span>
-          <span className="inline-flex items-center px-4 py-1 rounded-full bg-background/80 text-sm font-medium">
+          <span className="inline-flex items-center px-3 sm:px-4 py-1 rounded-full bg-background/80 text-xs sm:text-sm font-medium">
             {t('neighborhood.chips.uffizi')}
           </span>
         </div>

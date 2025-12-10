@@ -61,7 +61,7 @@ const ImageCarousel = ({ images }: ImageCarouselProps) => {
   const slideCount = images.length;
 
   return (
-    <div className="w-full max-w-5xl mx-auto px-6">
+    <div className="w-full max-w-5xl mx-auto px-2 sm:px-4 md:px-6">
       <Carousel
         className="w-full"
         setApi={setCarouselApi}
@@ -75,7 +75,7 @@ const ImageCarousel = ({ images }: ImageCarouselProps) => {
           {images.map((image, index) => (
             <CarouselItem key={image.src}>
               <div
-                className="relative overflow-hidden rounded-lg bg-muted"
+                className="relative overflow-hidden rounded-lg sm:rounded-xl bg-muted"
                 style={{ aspectRatio: Math.max(imageRatios[index] ?? DEFAULT_ASPECT_RATIO, DEFAULT_ASPECT_RATIO) }}
               >
                 <img
@@ -89,14 +89,14 @@ const ImageCarousel = ({ images }: ImageCarouselProps) => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="left-4 top-1/2 -translate-y-1/2 bg-background/90 shadow-lg border border-border/80 text-foreground hover:bg-background" />
-        <CarouselNext className="right-4 top-1/2 -translate-y-1/2 bg-background/90 shadow-lg border border-border/80 text-foreground hover:bg-background" />
+        <CarouselPrevious className="left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-background/90 shadow-lg border border-border/80 text-foreground hover:bg-background h-8 w-8 sm:h-10 sm:w-10" />
+        <CarouselNext className="right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-background/90 shadow-lg border border-border/80 text-foreground hover:bg-background h-8 w-8 sm:h-10 sm:w-10" />
       </Carousel>
-      <div className="flex flex-wrap items-center justify-between gap-3 px-2 md:px-6 mt-4">
-        <span className="text-sm text-muted-foreground" role="status" aria-live="polite">
+      <div className="flex flex-col sm:flex-row flex-wrap items-center justify-between gap-2 sm:gap-3 px-1 sm:px-2 md:px-6 mt-3 sm:mt-4">
+        <span className="text-xs sm:text-sm text-muted-foreground" role="status" aria-live="polite">
           Slide {currentIndex + 1} of {slideCount}
         </span>
-        <div className="flex items-center gap-2" role="tablist" aria-label="Select neighborhood photo">
+        <div className="flex items-center gap-1.5 sm:gap-2" role="tablist" aria-label="Select neighborhood photo">
           {images.map((image, index) => (
             <button
               key={image.src}
@@ -106,7 +106,7 @@ const ImageCarousel = ({ images }: ImageCarouselProps) => {
               aria-selected={currentIndex === index}
               tabIndex={currentIndex === index ? 0 : -1}
               className={cn(
-                "h-2.5 w-2.5 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-teal",
+                "h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full transition-all duration-300 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-teal",
                 currentIndex === index ? "bg-teal scale-110" : "bg-muted-foreground/40 hover:bg-muted-foreground/70",
               )}
               onClick={() => carouselApi?.scrollTo(index)}

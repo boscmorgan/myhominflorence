@@ -160,63 +160,63 @@ const RoomCard = ({
     .filter((item): item is FeatureItem => item !== null);
 
   return (
-    <Card className="h-full min-h-[480px] md:min-h-[520px] flex flex-col overflow-hidden border-border/70 shadow-xl rounded-xl">
-      <div className="relative h-72 md:h-[22rem] overflow-hidden">
+    <Card className="h-full min-h-[420px] sm:min-h-[480px] md:min-h-[520px] flex flex-col overflow-hidden border-border/70 shadow-xl rounded-xl">
+      <div className="relative h-52 sm:h-72 md:h-[22rem] overflow-hidden">
         <img src={image} alt={imageAlt || title} className="w-full h-full object-cover" loading="lazy" />
-        <div className="absolute top-3 left-3 flex flex-col gap-2">
+        <div className="absolute top-2.5 sm:top-3 left-2.5 sm:left-3 flex flex-col gap-2">
           {(badgeLabel || title) && (
-            <span className="inline-flex items-center rounded-full bg-background/90 px-3 py-1 text-[0.65rem] font-semibold tracking-[0.08em] uppercase">
+            <span className="inline-flex items-center rounded-full bg-background/90 px-2.5 sm:px-3 py-0.5 sm:py-1 text-[0.6rem] sm:text-[0.65rem] font-semibold tracking-[0.08em] uppercase">
               {badgeLabel || title}
             </span>
           )}
         </div>
-        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-foreground/90 via-foreground/60 to-transparent flex items-end">
-          <p className="px-5 pb-5 text-xl md:text-2xl font-semibold text-primary-foreground">
+        <div className="absolute inset-x-0 bottom-0 h-20 sm:h-28 bg-gradient-to-t from-foreground/90 via-foreground/60 to-transparent flex items-end">
+          <p className="px-3.5 sm:px-5 pb-3.5 sm:pb-5 text-lg sm:text-xl md:text-2xl font-semibold text-primary-foreground">
             {title}
           </p>
         </div>
       </div>
 
-      <div className="bg-card px-5 pt-4 pb-5 flex-1 flex flex-col">
-        <p className="text-[0.9rem] md:text-base text-foreground/90 mb-5 leading-relaxed">
+      <div className="bg-card px-3.5 sm:px-5 pt-3 sm:pt-4 pb-4 sm:pb-5 flex-1 flex flex-col">
+        <p className="text-[0.8rem] sm:text-[0.9rem] md:text-base text-foreground/90 mb-4 sm:mb-5 leading-relaxed line-clamp-3 sm:line-clamp-none">
           {description}
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5 text-[0.9rem] md:text-sm text-foreground">
-          {featureItems.map(({ icon: Icon, label }) => (
-            <div key={label} className="flex items-center gap-2">
-              <Icon className="w-4 h-4 text-muted-foreground" />
-              <span>{label}</span>
+        <div className="grid grid-cols-2 gap-2 sm:gap-2.5 text-[0.75rem] sm:text-[0.9rem] md:text-sm text-foreground">
+          {featureItems.slice(0, 6).map(({ icon: Icon, label }) => (
+            <div key={label} className="flex items-center gap-1.5 sm:gap-2">
+              <Icon className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-muted-foreground flex-shrink-0" />
+              <span className="truncate">{label}</span>
             </div>
           ))}
           {typeof distanceToCenter === 'number' && (
-            <div className="flex items-center gap-2">
-              <span className="text-muted-foreground text-lg leading-none">↔</span>
-              <span>{t('rooms.distanceLabel', { distance: distanceToCenter.toFixed(1) })}</span>
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <span className="text-muted-foreground text-base sm:text-lg leading-none">↔</span>
+              <span className="truncate">{t('rooms.distanceLabel', { distance: distanceToCenter.toFixed(1) })}</span>
             </div>
           )}
         </div>
 
-        <div className="my-6 h-px w-full bg-border" />
+        <div className="my-4 sm:my-6 h-px w-full bg-border" />
 
-        <div className="flex items-center gap-2 text-[0.95rem] md:text-base text-foreground mb-4">
-          <Users className="w-4 h-4 text-muted-foreground" />
+        <div className="flex items-center gap-1.5 sm:gap-2 text-[0.85rem] sm:text-[0.95rem] md:text-base text-foreground mb-3 sm:mb-4">
+          <Users className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-muted-foreground" />
           <span className="font-semibold">
             {guests} {guests > 1 ? t('rooms.guestsLabelPlural') : t('rooms.guestsLabel')}
           </span>
         </div>
 
-        <div className="mt-auto flex flex-wrap items-center justify-between gap-3">
+        <div className="mt-auto flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-between gap-2 sm:gap-3">
           <div className="flex flex-wrap items-center gap-2">
             {airbnbUrl && (
-              <Button variant="airbnb" className="px-4 py-2 text-xs md:text-sm" asChild>
+              <Button variant="airbnb" className="px-3 sm:px-4 py-2 text-[0.7rem] sm:text-xs md:text-sm flex-1 sm:flex-none" asChild>
                 <a href={airbnbUrl} target="_blank" rel="noreferrer">
                   {t('rooms.platforms.airbnb')}
                 </a>
               </Button>
             )}
             {bookingUrl && (
-              <Button variant="booking" className="px-4 py-2 text-xs md:text-sm" asChild>
+              <Button variant="booking" className="px-3 sm:px-4 py-2 text-[0.7rem] sm:text-xs md:text-sm flex-1 sm:flex-none" asChild>
                 <a href={bookingUrl} target="_blank" rel="noreferrer">
                   {t('rooms.platforms.booking')}
                 </a>
@@ -225,7 +225,7 @@ const RoomCard = ({
           </div>
 
           {showContact !== false && (
-            <Button variant="outline" className="px-5 py-2 text-sm md:text-base" asChild>
+            <Button variant="outline" className="px-4 sm:px-5 py-2 text-[0.75rem] sm:text-sm md:text-base" asChild>
               <a href="#contact">{t('rooms.contactHost')}</a>
             </Button>
           )}

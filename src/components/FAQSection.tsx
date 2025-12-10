@@ -27,20 +27,20 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-background">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 bg-background">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6 text-center">
           {t('faq.title')}
         </h2>
-        <p className="text-lg md:text-xl text-muted-foreground text-center mb-10 max-w-3xl mx-auto">
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground text-center mb-6 sm:mb-10 max-w-3xl mx-auto">
           {t('faq.subtitle')}
         </p>
 
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
           {faqs.map((faq) => (
-            <div key={faq.key} className="rounded-3xl border border-border bg-background/80 p-6 shadow-sm">
-              <h3 className="text-base font-semibold mb-3">{faq.question}</h3>
-              <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+            <div key={faq.key} className="rounded-2xl sm:rounded-3xl border border-border bg-background/80 p-4 sm:p-6 shadow-sm">
+              <h3 className="text-sm sm:text-base font-semibold mb-2 sm:mb-3">{faq.question}</h3>
+              <p className="text-xs sm:text-sm md:text-base text-muted-foreground leading-relaxed">
                 {faq.answer}
               </p>
             </div>

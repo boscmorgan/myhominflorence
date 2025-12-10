@@ -163,18 +163,18 @@ const Navbar = () => {
         isHidden ? '-translate-y-full' : 'translate-y-0'
       }`}
     >
-      <div className="container mx-auto px-6 py-1">
-        <div className="flex items-center justify-between gap-6">
+      <div className="container mx-auto px-4 sm:px-6 py-2">
+        <div className="flex items-center justify-between gap-4 sm:gap-6">
           <button 
             onClick={() => scrollToSection('hero')}
-            className="flex items-center gap-3"
+            className="flex items-center gap-2 sm:gap-3 min-w-0"
           >
-            <img src={logo} alt={t('nav.logoAlt')} className="h-12 w-auto" />
-            <div className="text-left text-black w-fit flex flex-col gap-0">
-              <span className="font-semibold text-lg leading-none block">
+            <img src={logo} alt={t('nav.logoAlt')} className="h-10 sm:h-12 w-auto flex-shrink-0" />
+            <div className="text-left text-black w-fit flex flex-col gap-0 min-w-0">
+              <span className="font-semibold text-base sm:text-lg leading-none block truncate">
                 Lorenzo &amp; Lorenzo
               </span>
-              <span className="block text-xs tracking-[0.08em] uppercase leading-tight">
+              <span className="block text-[0.65rem] sm:text-xs tracking-[0.08em] uppercase leading-tight">
                 {t('nav.tagline')}
               </span>
             </div>
@@ -268,25 +268,25 @@ const Navbar = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="mt-6 pb-4 flex flex-col items-center gap-4 w-full px-6 py-4">
+          <div className="mt-4 pb-6 flex flex-col items-center gap-3 w-full px-4 py-4">
             {menuSections.map((section) => (
               <button
                 key={section.id}
                 onClick={() => scrollToSection(section.id)}
-                className={`w-full text-center text-lg font-semibold uppercase tracking-[0.05em] transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/70 ${
+                className={`w-full text-center py-3 text-base font-semibold uppercase tracking-[0.05em] transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal/70 rounded-xl ${
                   activeSection === section.id
-                    ? 'text-teal'
-                    : 'text-black md:hover:bg-teal/10 md:hover:text-teal'
+                    ? 'text-teal bg-teal/5'
+                    : 'text-black active:bg-muted/50'
                 }`}
               >
                 {t(section.label)}
               </button>
             ))}
 
-            <div className="w-full border-t border-border/60 pt-4 mt-2" />
+            <div className="w-full border-t border-border/60 pt-4 mt-1" />
 
             <Button
-              className="mt-2 w-full bg-teal text-primary-foreground hover:bg-teal/90 md:hidden"
+              className="mt-1 w-full bg-teal text-primary-foreground hover:bg-teal/90 md:hidden py-6 text-base"
               size="lg"
               onClick={() => scrollToSection('rooms')}
             >

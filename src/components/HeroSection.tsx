@@ -81,11 +81,11 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-primary/70 backdrop-blur-sm" />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-end w-full max-w-5xl h-full py-20 md:py-24 px-6">
-        <div className="space-y-4 text-center mb-10 md:mb-12">
-          <h1 className="font-teko text-[2.6rem] md:text-[3.4rem] leading-[1.05] font-bold text-primary-foreground mb-2 flex flex-wrap justify-center gap-x-3 gap-y-2">
+      <div className="relative z-10 flex flex-col items-center justify-end w-full max-w-5xl h-full py-16 sm:py-20 md:py-24 px-4 sm:px-6">
+        <div className="space-y-3 sm:space-y-4 text-center mb-8 sm:mb-10 md:mb-12">
+          <h1 className="font-teko text-[2rem] sm:text-[2.6rem] md:text-[3.4rem] leading-[1.05] font-bold text-primary-foreground mb-2 flex flex-wrap justify-center gap-x-2 sm:gap-x-3 gap-y-1 sm:gap-y-2">
             <span
-              className={`inline-block min-w-[12ch] text-center transition-opacity duration-300 ${
+              className={`inline-block min-w-[10ch] sm:min-w-[12ch] text-center transition-opacity duration-300 ${
                 isGreetingVisible ? 'opacity-100' : 'opacity-0'
               }`}
             >
@@ -95,24 +95,24 @@ const HeroSection = () => {
               {t('hero.mainTitle', 'rooms & apartments\nin San Niccolò, Florence')}
             </span>
           </h1>
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
-            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-background/90 text-xs md:text-sm font-medium">
-              <span className="text-base">★</span>
+          <div className="mt-3 sm:mt-4 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            <span className="inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-background/90 text-[0.7rem] sm:text-xs md:text-sm font-medium">
+              <span className="text-sm sm:text-base">★</span>
               {t('hero.ratingBadge')}
             </span>
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-6 mt-8">
-          <div className="flex flex-col items-center gap-2">
+        <div className="flex flex-col items-center gap-4 sm:gap-6 mt-6 sm:mt-8">
+          <div className="flex flex-col items-center gap-2 sm:gap-3">
             <Button
               size="lg"
-              className="bg-teal text-primary-foreground hover:bg-teal/90 px-10 py-6 text-lg"
+              className="bg-teal text-primary-foreground hover:bg-teal/90 px-8 sm:px-10 py-5 sm:py-6 text-base sm:text-lg"
               onClick={handleScrollToRooms}
             >
               {t('hero.checkRooms')}
             </Button>
-            <p className="text-xs md:text-sm text-primary-foreground/80">
+            <p className="text-[0.7rem] sm:text-xs md:text-sm text-primary-foreground/80 text-center px-2">
               <button
                 type="button"
                 onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
@@ -123,7 +123,7 @@ const HeroSection = () => {
               {' '}
               <a 
                 href={`mailto:${email}`} 
-                className="font-medium hover:text-primary-foreground transition-colors"
+                className="font-medium hover:text-primary-foreground transition-colors break-all sm:break-normal"
               >
                 {email}
               </a>
@@ -135,12 +135,12 @@ const HeroSection = () => {
       <button
         type="button"
         onClick={handleScrollToRooms}
-        className="group absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-xs md:text-sm text-primary-foreground/80"
+        className="group absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-[0.65rem] sm:text-xs md:text-sm text-primary-foreground/80"
       >
-        <span className="uppercase tracking-[0.3em] text-[0.7rem]">
+        <span className="uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[0.6rem] sm:text-[0.7rem]">
           {t('hero.scrollHint')}
         </span>
-        <span className="block h-6 w-px bg-primary-foreground/40 group-hover:bg-primary-foreground transition-colors" />
+        <span className="block h-5 sm:h-6 w-px bg-primary-foreground/40 group-hover:bg-primary-foreground transition-colors" />
       </button>
     </section>
   );
