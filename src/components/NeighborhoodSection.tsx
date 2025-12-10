@@ -23,8 +23,11 @@ const NeighborhoodSection = () => {
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4 text-center">
           {t('neighborhood.title')}
         </h2>
-        <p className="text-base sm:text-lg md:text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-5 sm:mb-8">
+        <p className="text-base sm:text-lg md:text-xl text-muted-foreground text-center max-w-3xl mx-auto mb-3 sm:mb-4">
           {t('neighborhood.description')}
+        </p>
+        <p className="text-sm sm:text-base text-teal font-medium text-center max-w-2xl mx-auto mb-5 sm:mb-8">
+          {t('neighborhood.extraNote')}
         </p>
         <div className="text-center mb-5 sm:mb-8">
           <a

@@ -191,9 +191,6 @@ const RoomsSection = () => {
               {t('rooms.description')}
             </p>
           </div>
-          <div className="text-xs sm:text-sm text-muted-foreground">
-            {t('rooms.photosLabel', { count: rooms.reduce((sum, r) => sum + r.photos, 0) })}
-          </div>
         </div>
       </div>
 
