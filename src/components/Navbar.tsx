@@ -249,7 +249,7 @@ const Navbar = () => {
               <Button
                 className="bg-teal text-primary-foreground hover:bg-teal/90 px-5"
                 size="default"
-                onClick={() => scrollToSection('rooms')}
+                onClick={() => scrollToSection('contact')}
               >
                 {t('cta.button')}
               </Button>
@@ -288,7 +288,7 @@ const Navbar = () => {
             <Button
               className="mt-1 w-full bg-teal text-primary-foreground hover:bg-teal/90 md:hidden py-6 text-base"
               size="lg"
-              onClick={() => scrollToSection('rooms')}
+              onClick={() => scrollToSection('contact')}
             >
               {t('cta.button')}
             </Button>

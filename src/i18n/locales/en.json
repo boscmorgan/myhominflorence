@@ -32,13 +32,14 @@
   "about": {
     "title": "About Us",
     "description": "Book now and immerse yourself in a different way of visiting Florence – by feeling right at home. Our fully furnished rooms and apartments offer an affordable stay in the historic San Niccolò neighborhood, just a short walk from Ponte Vecchio.\nLorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, youthful atmosphere where guests are welcomed like family, surrounded by cafés, osterie, pizzerie, bakeries, art galleries and local shops that capture the real Florentine spirit.",
-    "snippet": "Meet “Il Bello” and “Il Vagge” — two longtime friends who turned their San Niccolò apartment into a welcoming guest house for modern travelers.",
+    "snippet": "Meet \"Il Bello\" and \"Il Vagge\" — two longtime friends who turned their San Niccolò apartment into a welcoming guest house for modern travelers.",
     "meetHostsLink": "Meet Il Bello & Il Vagge",
     "hostsAlt": "Lorenzo & Lorenzo hosts"
   },
   "neighborhood": {
     "title": "Discover Our Neighborhood",
-    "description": "Stay in San Niccolò, a historic neighborhood within Florence’s ancient walls, steps from the Arno and Ponte Vecchio, full of cafés, osterie, art galleries and small local shops. Our reception and main base of operations are right here, even though we host rooms and apartments across Florence, so every walking distance mentioned below refers to this San Niccolò home base.",
+    "description": "Stay in San Niccolò, a historic neighborhood within Florence's ancient walls, steps from the Arno and Ponte Vecchio, full of cafés, osterie, art galleries and small local shops. Our reception and main base of operations are right here, even though we host rooms and apartments across Florence, so every walking distance mentioned below refers to this San Niccolò home base.",
+    "extraNote": "We also have rooms and apartments all around Florence! Check Booking.com and Airbnb to discover all our properties.",
     "mapLink": "View on map",
     "chips": {
       "ponteVecchio": "Ponte Vecchio • 10 min walk",
@@ -115,10 +116,10 @@
       "climateControl": "Climate control",
       "privateBathroom": "Private bathroom",
       "desk": "Desk",
-      "wifi": "Wi‑Fi",
+      "wifi": "Wi-Fi",
       "entireApartment": "Entire apartment",
       "flatScreenTv": "Flat-screen TV",
-      "freeWifi": "Free Wi‑Fi",
+      "freeWifi": "Free Wi-Fi",
       "airConditioning": "Air conditioning",
       "privateKitchen": "Private kitchen",
       "privateKitchenette": "Private kitchenette",
@@ -145,9 +146,9 @@
       "comfort": "Comfort",
       "extras": "Extras"
     },
-    "wifi": "Wi‑Fi",
+    "wifi": "Wi-Fi",
     "luggage": "Luggage storage",
-    "checkin": "Flexible check‑in",
+    "checkin": "Flexible check-in",
     "kitchen": "Kitchen & lounge",
     "toiletries": "Toiletries",
     "shower": "Private shower",
@@ -169,15 +170,15 @@
     "names": "Lorenzo & Lorenzo",
     "role": "Hosts",
     "rating": "4.68 rating • 4,277+ reviews",
-    "bio": "Locals know them as “Il Bello” and “Il Vagge”: Lorenzo Bellini, with a sun‑worn Tuscan face and big hands that fix everything from elevators to tricky situations, and Lorenzo Vaggelli, the blonde with shy eyes and a wild beard who happily crosses Florence on foot to visit friends. Together they run their San Niccolò bed & breakfast in the same Oltrarno streets where it all began – a little village inside the city, between the Arno and the climb to San Miniato, dotted with cafés, bakeries, galleries and trattorie – welcoming guests with the warmth and humour of true Florentines.",
+    "bio": "Locals know them as \"Il Bello\" and \"Il Vagge\": Lorenzo Bellini, with a sun-worn Tuscan face and big hands that fix everything from elevators to tricky situations, and Lorenzo Vaggelli, the blonde with shy eyes and a wild beard who happily crosses Florence on foot to visit friends. Together they run their San Niccolò bed & breakfast in the same Oltrarno streets where it all began – a little village inside the city, between the Arno and the climb to San Miniato, dotted with cafés, bakeries, galleries and trattorie – welcoming guests with the warmth and humour of true Florentines.",
     "born": "Born in the 80s",
     "work": "Vacation rental hosts",
     "lives": "Based in Florence, Italy"
   },
   "parking": {
-    "title": "Lorenzo & Lorenzo’s Parking",
+    "title": "Lorenzo & Lorenzo's Parking",
     "subtitle": "Exclusive guest parking just outside the ZTL.",
-    "intro": "To make your stay easier, we offer exclusive, convenient parking options for our guests. Our parking is just outside Florence’s limited traffic zone (ZTL), so you can arrive by car and explore the city on foot.",
+    "intro": "To make your stay easier, we offer exclusive, convenient parking options for our guests. Our parking is just outside Florence's limited traffic zone (ZTL), so you can arrive by car and explore the city on foot.",
     "tableTitle": "Tariff",
     "daily": "Daily",
     "weekly": "Weekly",
@@ -204,7 +205,7 @@
     "items": {
       "lateCheckin": {
         "q": "Can I arrive late?",
-        "a": "Yes. Late arrivals are no problem—just let us know your expected arrival time and we’ll coordinate the check-in with you directly."
+        "a": "Yes. Late arrivals are no problem—just let us know your expected arrival time and we'll coordinate the check-in with you directly."
       },
       "luggage": {
         "q": "Can I leave my luggage?",
@@ -243,7 +244,7 @@
   },
   "notFound": {
     "title": "Page not found",
-    "description": "The page you were looking for isn’t here or may have been moved.",
+    "description": "The page you were looking for isn't here or may have been moved.",
     "cta": "Return to home"
   }
 }
