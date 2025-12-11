@@ -7,18 +7,31 @@ import HostsSection from '@/components/HostsSection';
 import ParkingSection from '@/components/ParkingSection';
 import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
+import { ScrollReveal } from '@/components/ScrollReveal';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
       <HeroSection />
-      <AboutSection />
-      <NeighborhoodSection />
-      <RoomsSection />
-      <ParkingSection />
-      <HostsSection />
-      <FAQSection />
+      <ScrollReveal>
+        <AboutSection />
+      </ScrollReveal>
+      <ScrollReveal delay={100}>
+        <NeighborhoodSection />
+      </ScrollReveal>
+      <ScrollReveal delay={100}>
+        <RoomsSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <ParkingSection />
+      </ScrollReveal>
+      <ScrollReveal delay={100}>
+        <HostsSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <FAQSection />
+      </ScrollReveal>
       <Footer />
     </div>
   );
