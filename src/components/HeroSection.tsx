@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useMemo, useState, useRef, useCallback } from 'react';
 import heroImage from '@/assets/reception_003.jpg';
 import { Button } from '@/components/ui/button';
 import { supportedLanguages, type SupportedLanguage } from '@/i18n/config';
@@ -13,6 +13,26 @@ const HeroSection = () => {
   const { t, i18n } = useTranslation();
   const [welcomeText, setWelcomeText] = useState('');
   const [isGreetingVisible, setIsGreetingVisible] = useState(true);
+  const [parallaxOffset, setParallaxOffset] = useState(0);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  // Parallax scroll effect
+  const handleScroll = useCallback(() => {
+    if (!sectionRef.current) return;
+    const scrollY = window.scrollY;
+    const sectionHeight = sectionRef.current.offsetHeight;
+    
+    // Only apply parallax when hero is in view
+    if (scrollY <= sectionHeight) {
+      setParallaxOffset(scrollY * 0.4);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [handleScroll]);
+
   const greetingMap = useMemo(() => {
     return heroRotationOrder.reduce((acc, lang) => {
       acc[lang] = t(`hero.greetings.${lang}`);
@@ -70,13 +90,14 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center">
+    <section ref={sectionRef} id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <img
           src={heroImage}
           alt="Reception area of Lorenzo & Lorenzo"
-          className="w-full h-full object-cover"
-          loading="lazy"
+          className="w-full h-[120%] object-cover transition-transform duration-100 ease-out will-change-transform"
+          style={{ transform: `translateY(${parallaxOffset}px)` }}
+          loading="eager"
         />
         <div className="absolute inset-0 bg-primary/70 backdrop-blur-sm" />
       </div>
