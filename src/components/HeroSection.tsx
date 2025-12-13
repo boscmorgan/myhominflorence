@@ -14,7 +14,14 @@ const HeroSection = () => {
   const [welcomeText, setWelcomeText] = useState('');
   const [isGreetingVisible, setIsGreetingVisible] = useState(true);
   const [parallaxOffset, setParallaxOffset] = useState(0);
+  const [isLoaded, setIsLoaded] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+
+  // Trigger zoom animation on mount
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoaded(true), 100);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Parallax scroll effect
   const handleScroll = useCallback(() => {
@@ -95,8 +102,10 @@ const HeroSection = () => {
         <img
           src={heroImage}
           alt="Reception area of Lorenzo & Lorenzo"
-          className="w-full h-[120%] object-cover transition-transform duration-100 ease-out will-change-transform"
-          style={{ transform: `translateY(${parallaxOffset}px)` }}
+          className={`w-full h-[120%] object-cover will-change-transform transition-transform duration-[2000ms] ease-out ${
+            isLoaded ? 'scale-100' : 'scale-110'
+          }`}
+          style={{ transform: `translateY(${parallaxOffset}px) scale(${isLoaded ? 1 : 1.1})` }}
           loading="eager"
         />
         <div className="absolute inset-0 bg-primary/70 backdrop-blur-sm" />
