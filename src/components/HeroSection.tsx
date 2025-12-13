@@ -165,7 +165,7 @@ const HeroSection = () => {
       <button
         type="button"
         onClick={handleScrollToRooms}
-        className="group absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-[0.65rem] sm:text-xs md:text-sm text-primary-foreground/80"
+        className="group absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1 text-[0.65rem] sm:text-xs md:text-sm text-primary-foreground/80 animate-float"
       >
         <span className="uppercase tracking-[0.2em] sm:tracking-[0.3em] text-[0.6rem] sm:text-[0.7rem]">
           {t('hero.scrollHint')}
