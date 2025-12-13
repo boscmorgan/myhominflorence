@@ -11,8 +11,7 @@ const heroRotationOrder: SupportedLanguage[] = [
 
 const HeroSection = () => {
   const { t, i18n } = useTranslation();
-  const [welcomeText, setWelcomeText] = useState('');
-  const [isGreetingVisible, setIsGreetingVisible] = useState(true);
+  const [displayedText, setDisplayedText] = useState('');
   const [parallaxOffset, setParallaxOffset] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -47,49 +46,73 @@ const HeroSection = () => {
     }, {} as Record<SupportedLanguage, string>);
   }, [t]);
 
-  const email = t('footer.email');
-
+  // Typewriter effect
   useEffect(() => {
     const initialIndex = heroRotationOrder.indexOf(i18n.language as SupportedLanguage);
     const safeInitialIndex = initialIndex === -1 ? 0 : initialIndex;
-    const initialKey = heroRotationOrder[safeInitialIndex];
-    const defaultGreeting = greetingMap[initialKey] ?? greetingMap.it ?? '';
+    const defaultGreeting = greetingMap[heroRotationOrder[safeInitialIndex]] ?? greetingMap.it ?? '';
 
-    setWelcomeText(defaultGreeting);
-    setIsGreetingVisible(true);
-
-    let index = safeInitialIndex;
-    const maxRotations = 3; // full cycles through all languages
+    const maxRotations = 3;
     const totalSteps = heroRotationOrder.length * maxRotations;
     let step = 0;
+    let currentIndex = safeInitialIndex;
+    let charIndex = 0;
+    let isTyping = true;
+    let currentWord = greetingMap[heroRotationOrder[currentIndex]] ?? defaultGreeting;
 
-    const intervalId = window.setInterval(() => {
+    const typeSpeed = 80;
+    const deleteSpeed = 40;
+    const pauseAfterType = 1500;
+    const pauseAfterDelete = 300;
+
+    let timeoutId: number;
+
+    const tick = () => {
       if (step >= totalSteps) {
-        // stop on the user's original language
-        setIsGreetingVisible(false);
-        window.setTimeout(() => {
-          setWelcomeText(defaultGreeting);
-          setIsGreetingVisible(true);
-        }, 200);
-        window.clearInterval(intervalId);
+        // Final word - type it and stop
+        currentWord = defaultGreeting;
+        if (charIndex < currentWord.length) {
+          charIndex++;
+          setDisplayedText(currentWord.slice(0, charIndex));
+          timeoutId = window.setTimeout(tick, typeSpeed);
+        }
         return;
       }
 
-      setIsGreetingVisible(false);
-      window.setTimeout(() => {
-        index = (index + 1) % heroRotationOrder.length;
-        const key = heroRotationOrder[index];
-        setWelcomeText(greetingMap[key] ?? defaultGreeting);
-        setIsGreetingVisible(true);
-      }, 200);
+      if (isTyping) {
+        if (charIndex < currentWord.length) {
+          charIndex++;
+          setDisplayedText(currentWord.slice(0, charIndex));
+          timeoutId = window.setTimeout(tick, typeSpeed);
+        } else {
+          // Finished typing, pause then start deleting
+          isTyping = false;
+          timeoutId = window.setTimeout(tick, pauseAfterType);
+        }
+      } else {
+        if (charIndex > 0) {
+          charIndex--;
+          setDisplayedText(currentWord.slice(0, charIndex));
+          timeoutId = window.setTimeout(tick, deleteSpeed);
+        } else {
+          // Finished deleting, move to next word
+          step++;
+          currentIndex = (currentIndex + 1) % heroRotationOrder.length;
+          currentWord = greetingMap[heroRotationOrder[currentIndex]] ?? defaultGreeting;
+          isTyping = true;
+          timeoutId = window.setTimeout(tick, pauseAfterDelete);
+        }
+      }
+    };
 
-      step += 1;
-    }, 2800);
+    tick();
 
     return () => {
-      window.clearInterval(intervalId);
+      window.clearTimeout(timeoutId);
     };
   }, [greetingMap, i18n.language]);
+
+  const email = t('footer.email');
 
   const handleScrollToRooms = () => {
     const el = document.getElementById('rooms');
@@ -114,12 +137,9 @@ const HeroSection = () => {
       <div className="relative z-10 flex flex-col items-center justify-end w-full max-w-5xl h-full py-16 sm:py-20 md:py-24 px-4 sm:px-6">
         <div className="space-y-3 sm:space-y-4 text-center mb-8 sm:mb-10 md:mb-12">
           <h1 className="font-teko text-[2rem] sm:text-[2.6rem] md:text-[3.4rem] leading-[1.05] font-bold text-primary-foreground mb-2 flex flex-wrap justify-center gap-x-2 sm:gap-x-3 gap-y-1 sm:gap-y-2">
-            <span
-              className={`inline-block min-w-[10ch] sm:min-w-[12ch] text-center transition-opacity duration-300 ${
-                isGreetingVisible ? 'opacity-100' : 'opacity-0'
-              }`}
-            >
-              {welcomeText}
+            <span className="inline-block min-w-[10ch] sm:min-w-[12ch] text-center">
+              {displayedText}
+              <span className="animate-pulse">|</span>
             </span>
             <span className="text-center leading-tight">
               {t('hero.mainTitle', 'rooms & apartments\nin San Niccolò, Florence')}
