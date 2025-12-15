@@ -60,10 +60,10 @@ const HeroSection = () => {
     let isTyping = true;
     let currentWord = greetingMap[heroRotationOrder[currentIndex]] ?? defaultGreeting;
 
-    const typeSpeed = 80;
-    const deleteSpeed = 40;
-    const pauseAfterType = 1500;
-    const pauseAfterDelete = 300;
+    const typeSpeed = 100;
+    const deleteSpeed = 50;
+    const pauseAfterType = 2000;
+    const pauseAfterDelete = 400;
 
     let timeoutId: number;
 
