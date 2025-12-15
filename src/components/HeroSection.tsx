@@ -60,10 +60,20 @@ const HeroSection = () => {
     let isTyping = true;
     let currentWord = greetingMap[heroRotationOrder[currentIndex]] ?? defaultGreeting;
 
-    const typeSpeed = 100;
-    const deleteSpeed = 50;
+    const baseTypeSpeed = 100;
+    const baseDeleteSpeed = 50;
     const pauseAfterType = 2000;
     const pauseAfterDelete = 400;
+    
+    // Easing function for natural typing rhythm
+    const getTypingDelay = (index: number, total: number) => {
+      const progress = index / total;
+      // Slow start, faster middle, slight slowdown at end
+      const easing = Math.sin(progress * Math.PI) * 0.3 + 0.85;
+      return baseTypeSpeed * easing + Math.random() * 30;
+    };
+    
+    const getDeletingDelay = () => baseDeleteSpeed + Math.random() * 20;
 
     let timeoutId: number;
 
@@ -74,7 +84,7 @@ const HeroSection = () => {
         if (charIndex < currentWord.length) {
           charIndex++;
           setDisplayedText(currentWord.slice(0, charIndex));
-          timeoutId = window.setTimeout(tick, typeSpeed);
+          timeoutId = window.setTimeout(tick, getTypingDelay(charIndex, currentWord.length));
         }
         return;
       }
@@ -83,7 +93,7 @@ const HeroSection = () => {
         if (charIndex < currentWord.length) {
           charIndex++;
           setDisplayedText(currentWord.slice(0, charIndex));
-          timeoutId = window.setTimeout(tick, typeSpeed);
+          timeoutId = window.setTimeout(tick, getTypingDelay(charIndex, currentWord.length));
         } else {
           // Finished typing, pause then start deleting
           isTyping = false;
@@ -93,7 +103,7 @@ const HeroSection = () => {
         if (charIndex > 0) {
           charIndex--;
           setDisplayedText(currentWord.slice(0, charIndex));
-          timeoutId = window.setTimeout(tick, deleteSpeed);
+          timeoutId = window.setTimeout(tick, getDeletingDelay());
         } else {
           // Finished deleting, move to next word
           step++;
