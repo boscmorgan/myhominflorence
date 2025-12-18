@@ -13,8 +13,8 @@
   },
   "hero": {
     "welcome": "Welcome to Florence",
-    "mainTitle": "rooms & apartments in San Niccolò, Florence",
-    "valueProp": "Feel at home in our fully furnished rooms & apartments in San Niccolò, just a short walk from Ponte Vecchio – comfortable, affordable stays in a relaxed, youthful atmosphere.",
+    "mainTitle": "affordable rooms & apartments in Florence city center",
+    "valueProp": "Book your stay at myhomeinflorence.com – fully furnished rooms & apartments in San Niccolò, steps from Ponte Vecchio. Better than Airbnb: direct booking, self check-in, affordable parking outside ZTL. Your alternative to Florence hotels and vacation rentals.",
     "ratingBadge": "4.68 rating • 1,700+ reviews",
     "selfCheckInBadge": "Self check-in & luggage storage",
     "locationBadge": "San Niccolò • Near Ponte Vecchio",
@@ -30,11 +30,11 @@
     }
   },
   "about": {
-    "title": "About Us",
-    "description": "Book now and immerse yourself in a different way of visiting Florence – by feeling right at home. Our fully furnished rooms and apartments offer an affordable stay in the historic San Niccolò neighborhood, just a short walk from Ponte Vecchio.\nLorenzo & Lorenzo host with the warmth of longtime friends, creating a simple, youthful atmosphere where guests are welcomed like family, surrounded by cafés, osterie, pizzerie, bakeries, art galleries and local shops that capture the real Florentine spirit.",
-    "snippet": "Meet \"Il Bello\" and \"Il Vagge\" — two longtime friends who turned their San Niccolò apartment into a welcoming guest house for modern travelers.",
+    "title": "About Lorenzo & Lorenzo",
+    "description": "Looking for an Airbnb alternative in Florence? Book directly at myhomeinflorence.com and experience authentic Florentine hospitality. Our fully furnished rooms and apartments in the historic San Niccolò neighborhood offer affordable vacation rentals just steps from Ponte Vecchio and Florence city center.\nLorenzo & Lorenzo host with the warmth of longtime friends, creating a welcoming atmosphere where guests feel like family – surrounded by cafés, osterie, pizzerie, bakeries, art galleries and local shops that capture the real Florentine spirit.",
+    "snippet": "Meet \"Il Bello\" and \"Il Vagge\" — two longtime friends who turned their San Niccolò apartment into a welcoming guest house, now one of Florence's top-rated vacation rentals.",
     "meetHostsLink": "Meet Il Bello & Il Vagge",
-    "hostsAlt": "Lorenzo & Lorenzo hosts"
+    "hostsAlt": "Lorenzo & Lorenzo hosts - Airbnb Superhosts in Florence"
   },
   "neighborhood": {
     "title": "Discover Our Neighborhood",
@@ -176,48 +176,48 @@
     "lives": "Based in Florence, Italy"
   },
   "parking": {
-    "title": "Lorenzo & Lorenzo's Parking",
-    "subtitle": "Exclusive guest parking just outside the ZTL.",
-    "intro": "To make your stay easier, we offer exclusive, convenient parking options for our guests. Our parking is just outside Florence's limited traffic zone (ZTL), so you can arrive by car and explore the city on foot.",
-    "tableTitle": "Tariff",
+    "title": "Affordable Parking in Florence",
+    "subtitle": "Guest parking outside the ZTL – €20/day or €120/week",
+    "intro": "Finding parking in Florence is challenging, but we've got you covered. Our exclusive parking is strategically located just outside Florence's limited traffic zone (ZTL), so you can arrive by car, park affordably, and explore the historic city center on foot. The best parking solution for visitors to Florence.",
+    "tableTitle": "Parking Rates",
     "daily": "Daily",
     "weekly": "Weekly",
     "dailyPrice": "€ 20 per day",
     "weeklyPrice": "€ 120 per week",
-    "contact": "Planning your visit? Reach out at lorenzoelorenzo@libero.it for parking availability and reservations.",
-    "contactCta": "Request parking availability",
-    "bulletsTitle": "Why our parking works well",
+    "contact": "Planning your visit to Florence? Contact lorenzoelorenzo@libero.it for parking availability and reservations.",
+    "contactCta": "Reserve parking now",
+    "bulletsTitle": "Why choose our Florence parking",
     "items": {
-      "location": "Strategic location just outside the ZTL, close to the historic center.",
-      "pricing": "Competitive pricing whether you stay a few nights or several days.",
-      "booking": "We recommend booking in advance, especially during peak seasons, to guarantee your spot."
+      "location": "Strategic location just outside the ZTL, close to Florence historic center and major attractions.",
+      "pricing": "Affordable Florence parking rates – competitive pricing for short and long stays.",
+      "booking": "Book in advance for guaranteed parking, especially during peak tourist seasons in Florence."
     },
     "nearbyPlaces": {
       "michelangelo": "Piazzale Michelangelo",
       "boboli": "Giardino di Boboli",
       "pitti": "Palazzo Pitti",
-      "uffizi": "Uffizi"
+      "uffizi": "Uffizi Gallery"
     }
   },
   "faq": {
-    "title": "Good to know",
-    "subtitle": "A few quick answers to the questions guests ask most often.",
+    "title": "Florence Travel FAQ",
+    "subtitle": "Answers about Florence tourist tax, parking, check-in and more.",
     "items": {
       "lateCheckin": {
-        "q": "Can I arrive late?",
-        "a": "Yes. Late arrivals are no problem—just let us know your expected arrival time and we'll coordinate the check-in with you directly."
+        "q": "Can I arrive late to my Florence accommodation?",
+        "a": "Yes! Late arrivals are no problem at Lorenzo & Lorenzo. Just let us know your expected arrival time and we'll coordinate self check-in directly with you. Our Florence apartments and rooms all offer flexible check-in."
       },
       "luggage": {
-        "q": "Can I leave my luggage?",
-        "a": "We can usually store your luggage before check-in or after check-out. Let us know in advance so we can arrange it."
+        "q": "Can I store luggage before check-in or after check-out?",
+        "a": "Yes, we offer complimentary luggage storage for our guests. Let us know in advance and we'll arrange secure storage before check-in or after check-out – perfect for exploring Florence on your arrival or departure day."
       },
       "parking": {
-        "q": "Do you have parking?",
-        "a": "Yes. We offer private parking just outside the ZTL with daily and weekly rates. See the Parking section for details."
+        "q": "Is there affordable parking in Florence city center?",
+        "a": "Yes! We offer private guest parking just outside the ZTL (limited traffic zone) at €20/day or €120/week – one of the most affordable parking options near Florence center. See our Parking section for full details."
       },
       "touristTax": {
-        "q": "Is there a tourist tax in Florence?",
-        "a": "Guests pay a tourist tax starting from €6.00 per person per night, up to 7 nights, as part of their reservation. It is set by the Municipality of Florence. Call us for specific details."
+        "q": "What is the Florence tourist tax (tassa di soggiorno)?",
+        "a": "Florence charges a city tourist tax starting from €6.00 per person per night, for up to 7 nights. This tassa di soggiorno is set by the Municipality of Florence and applies to all accommodations. Contact us for specific rates based on accommodation type."
       }
     }
   },
@@ -233,14 +233,14 @@
     "email": "lorenzoelorenzo@libero.it",
     "whatsapp": "Contact us on WhatsApp",
     "propertyCTA": {
-      "intro": "Are you a property owner who needs management support?",
-      "invite": "Contact us and discover how we host guests",
-      "connector": "and browse our deck",
+      "intro": "Property owner looking for Airbnb management in Florence?",
+      "invite": "Discover our vacation rental property management services",
+      "connector": "and view our approach",
       "approachLinkLabel": "here",
       "deckLinkLabel": "here"
     },
-    "touristTaxNote": "Guests who book stays in Florence pay a city tourist tax starting from €6.00 per person per night (up to 7 nights). Call us for details.",
-    "copyright": "© 2025 Lorenzo & Lorenzo. All rights reserved."
+    "touristTaxNote": "Florence tourist tax (tassa di soggiorno): from €6.00 per person per night (up to 7 nights). Call us for details.",
+    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Rooms & Apartments Florence"
   },
   "notFound": {
     "title": "Page not found",

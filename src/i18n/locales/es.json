@@ -13,8 +13,8 @@
   },
   "hero": {
     "welcome": "Bienvenido a Florencia",
-    "mainTitle": "habitaciones y apartamentos en San Niccolò, Florencia",
-    "valueProp": "Siéntase como en casa en nuestras habitaciones y apartamentos completamente amueblados en San Niccolò, a pocos pasos del Ponte Vecchio: estancias cómodas y asequibles en un ambiente relajado y juvenil.",
+    "mainTitle": "habitaciones y apartamentos económicos en el centro de Florencia",
+    "valueProp": "Reserva en myhomeinflorence.com – habitaciones y apartamentos en San Niccolò, cerca del Ponte Vecchio. Alternativa a Airbnb: reserva directa, auto check-in, parking económico fuera de ZTL. Tu opción para alquiler vacacional en Florencia.",
     "ratingBadge": "Calificación de 4,68 • Más de 1700 reseñas",
     "selfCheckInBadge": "Auto check-in y almacenamiento de equipaje",
     "locationBadge": "San Niccolò • cerca del Ponte Vecchio",
@@ -176,21 +176,21 @@
     "lives": "Con sede en Florencia, Italia."
   },
   "parking": {
-    "title": "Aparcamiento de Lorenzo y Lorenzo",
-    "subtitle": "Estacionamiento exclusivo para huéspedes a las afueras de la ZTL.",
-    "intro": "Para facilitar su estadía, ofrecemos opciones de estacionamiento exclusivas y convenientes para nuestros huéspedes. Nuestro aparcamiento está justo fuera de la zona de tráfico limitado (ZTL) de Florencia, por lo que puedes llegar en coche y explorar la ciudad a pie.",
-    "tableTitle": "Tarifa",
+    "title": "Parking Económico en Florencia",
+    "subtitle": "Estacionamiento fuera de la ZTL – €20/día o €120/semana",
+    "intro": "Encontrar parking en Florencia es difícil, pero tenemos la solución. Nuestro estacionamiento exclusivo está estratégicamente ubicado fuera de la ZTL de Florencia, para que puedas llegar en coche, aparcar a buen precio y explorar el centro histórico a pie. La mejor solución de parking para visitantes de Florencia.",
+    "tableTitle": "Tarifas de Parking",
     "daily": "Diario",
     "weekly": "Semanal",
     "dailyPrice": "20 € por día",
     "weeklyPrice": "120 € por semana",
-    "contact": "¿Estás planeando tu visita? Escríbenos a lorenzoelorenzo@libero.it para consultar disponibilidad y reservar.",
-    "contactCta": "Solicitar disponibilidad de parking",
-    "bulletsTitle": "Por qué nuestro aparcamiento funciona bien",
+    "contact": "¿Planeas visitar Florencia? Escríbenos a lorenzoelorenzo@libero.it para consultar disponibilidad y reservar.",
+    "contactCta": "Reservar parking ahora",
+    "bulletsTitle": "Por qué elegir nuestro parking en Florencia",
     "items": {
-      "location": "Ubicación estratégica a las afueras de la ZTL, cerca del centro histórico.",
-      "pricing": "Precios competitivos ya sea que te quedes unas cuantas noches o varios días.",
-      "booking": "Recomendamos reservar con antelación, especialmente en temporada alta, para garantizar tu plaza."
+      "location": "Ubicación estratégica fuera de la ZTL, cerca del centro histórico de Florencia y las principales atracciones.",
+      "pricing": "Tarifas de parking en Florencia económicas – precios competitivos para estancias cortas y largas.",
+      "booking": "Reserva con antelación para parking garantizado, especialmente en temporada alta en Florencia."
     },
     "nearbyPlaces": {
       "michelangelo": "Plaza de Miguel Ángel",
@@ -200,24 +200,24 @@
     }
   },
   "faq": {
-    "title": "Es bueno saberlo",
-    "subtitle": "Algunas respuestas rápidas a las preguntas que los huéspedes hacen con más frecuencia.",
+    "title": "FAQ Viaje a Florencia",
+    "subtitle": "Respuestas sobre tasa turística Florencia, parking, check-in y más.",
     "items": {
       "lateCheckin": {
-        "q": "¿Puedo llegar tarde?",
-        "a": "Sí, podemos recibirte incluso si llegas tarde. Solo avísanos con tu hora aproximada y coordinaremos todo directamente contigo."
+        "q": "¿Puedo llegar tarde a mi alojamiento en Florencia?",
+        "a": "¡Sí! Las llegadas tardías no son problema en Lorenzo & Lorenzo. Solo avísanos tu hora de llegada y coordinaremos el auto check-in directamente contigo. Todos nuestros apartamentos y habitaciones en Florencia ofrecen check-in flexible."
       },
       "luggage": {
-        "q": "¿Puedo dejar mi equipaje?",
-        "a": "Normalmente podemos guardar tu equipaje antes del check-in o después del check-out. Avísanos con antelación para organizarlo."
+        "q": "¿Puedo guardar el equipaje antes del check-in o después del check-out?",
+        "a": "Sí, ofrecemos almacenamiento de equipaje gratuito para nuestros huéspedes. Avísanos con antelación y organizaremos un depósito seguro – perfecto para explorar Florencia el día de llegada o salida."
       },
       "parking": {
-        "q": "¿Tienes estacionamiento?",
-        "a": "Sí. Ofrecemos estacionamiento privado a las afueras de la ZTL con tarifas diarias y semanales. Consulte la sección Estacionamiento para obtener más detalles."
+        "q": "¿Hay parking económico en el centro de Florencia?",
+        "a": "¡Sí! Ofrecemos parking privado fuera de la ZTL a €20/día o €120/semana – una de las opciones de parking más económicas cerca del centro de Florencia. Consulta la sección Parking para más detalles."
       },
       "touristTax": {
-        "q": "¿Existe una tasa turística en Florencia?",
-        "a": "Los huéspedes pagan un impuesto turístico a partir de 6,00 € por persona por noche, hasta 7 noches, como parte de su reserva. Lo establece el Ayuntamiento de Florencia. Llámenos para detalles específicos."
+        "q": "¿Qué es la tasa turística de Florencia?",
+        "a": "Florencia cobra una tasa turística desde €6,00 por persona por noche, hasta 7 noches. Esta tasa es establecida por el Ayuntamiento de Florencia y aplica a todos los alojamientos. Contáctanos para tarifas específicas según el tipo de alojamiento."
       }
     }
   },
@@ -233,14 +233,14 @@
     "email": "lorenzoelorenzo@libero.it",
     "whatsapp": "Escríbenos por WhatsApp",
     "propertyCTA": {
-      "intro": "¿Eres propietario de un alojamiento y necesitas ayuda con la gestión?",
-      "invite": "Contáctanos y conoce nuestro modo de trabajar",
-      "connector": "y revisa nuestro deck",
+      "intro": "¿Eres propietario y buscas gestión Airbnb en Florencia?",
+      "invite": "Descubre nuestros servicios de gestión de alquileres vacacionales",
+      "connector": "y conoce nuestro enfoque",
       "approachLinkLabel": "aquí",
       "deckLinkLabel": "aquí"
     },
-    "touristTaxNote": "Los huéspedes que reservan estancias en Florencia pagan una tasa turística municipal a partir de 6,00 € por persona y noche (hasta 7 noches). Llámanos para más detalles.",
-    "copyright": "© 2025 Lorenzo y Lorenzo. Reservados todos los derechos."
+    "touristTaxNote": "Tasa turística Florencia: desde €6,00 por persona por noche (hasta 7 noches). Llámanos para detalles.",
+    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Habitaciones y Apartamentos Florencia"
   },
   "notFound": {
     "title": "Página no encontrada",

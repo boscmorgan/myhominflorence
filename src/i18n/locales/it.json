@@ -13,8 +13,8 @@
   },
   "hero": {
     "welcome": "Benvenuti a Firenze",
-    "mainTitle": "camere e appartamenti a San Niccolò, Firenze",
-    "valueProp": "Sentiti a casa nelle nostre camere e appartamenti completamente arredati a San Niccolò, a pochi passi da Ponte Vecchio: soggiorni confortevoli e convenienti in un'atmosfera rilassata e giovanile.",
+    "mainTitle": "camere e appartamenti economici nel centro di Firenze",
+    "valueProp": "Prenota su myhomeinflorence.com – camere e appartamenti arredati a San Niccolò, a due passi da Ponte Vecchio. Alternativa ad Airbnb: prenotazione diretta, self check-in, parcheggio conveniente fuori ZTL. La tua soluzione per affitti brevi e case vacanza a Firenze.",
     "ratingBadge": "Valutazione 4,68 • Oltre 1.700 recensioni",
     "selfCheckInBadge": "Check-in automatico e deposito bagagli",
     "locationBadge": "San Niccolò • vicino a Ponte Vecchio",
@@ -30,11 +30,11 @@
     }
   },
   "about": {
-    "title": "Chi siamo",
-    "description": "Prenota ora e immergiti in un modo diverso di visitare Firenze, sentendoti come a casa. Le nostre camere e appartamenti completamente arredati offrono un soggiorno conveniente nello storico quartiere di San Niccolò, a pochi passi da Ponte Vecchio.\nLorenzo e Lorenzo ospitano con il calore di amici di lunga data, creando un'atmosfera semplice e giovanile dove gli ospiti sono accolti come una famiglia, circondati da caffè, osterie, pizzerie, panifici, gallerie d'arte e negozi locali che catturano il vero spirito fiorentino.",
-    "snippet": "Incontra \"Il Bello\" e \"Il Vagge\", due amici di lunga data che hanno trasformato il loro appartamento a San Niccolò in un accogliente guest house per viaggiatori moderni.",
+    "title": "Chi siamo - Lorenzo & Lorenzo",
+    "description": "Cerchi un'alternativa ad Airbnb a Firenze? Prenota direttamente su myhomeinflorence.com e vivi l'autentica ospitalità fiorentina. Le nostre camere e appartamenti nel quartiere storico di San Niccolò offrono affitti brevi economici a pochi passi da Ponte Vecchio e dal centro di Firenze.\nLorenzo e Lorenzo accolgono gli ospiti con il calore di vecchi amici, creando un'atmosfera familiare circondati da caffè, osterie, pizzerie, panifici, gallerie d'arte e negozi che catturano il vero spirito fiorentino.",
+    "snippet": "Incontra \"Il Bello\" e \"Il Vagge\" — due amici che hanno trasformato il loro appartamento in San Niccolò in una delle case vacanza più apprezzate di Firenze.",
     "meetHostsLink": "Conosci Il Bello & Il Vagge",
-    "hostsAlt": "Lorenzo & Lorenzo"
+    "hostsAlt": "Lorenzo & Lorenzo - Superhost Airbnb a Firenze"
   },
   "neighborhood": {
     "title": "Scopri il nostro quartiere",
@@ -176,48 +176,48 @@
     "lives": "Con sede a Firenze, Italia"
   },
   "parking": {
-    "title": "Il Parcheggio di Lorenzo e Lorenzo",
-    "subtitle": "Parcheggio esclusivo per gli ospiti appena fuori dalla ZTL.",
-    "intro": "Per facilitare il vostro soggiorno offriamo ai nostri ospiti esclusive e comode possibilità di parcheggio. Il nostro parcheggio è appena fuori dalla zona a traffico limitato (ZTL) di Firenze, quindi puoi arrivare in auto ed esplorare la città a piedi.",
-    "tableTitle": "Tariffa",
+    "title": "Parcheggio Economico a Firenze",
+    "subtitle": "Parcheggio ospiti fuori ZTL – €20/giorno o €120/settimana",
+    "intro": "Trovare parcheggio a Firenze è difficile, ma noi abbiamo la soluzione. Il nostro parcheggio esclusivo è strategicamente posizionato appena fuori dalla ZTL di Firenze, così puoi arrivare in auto, parcheggiare a prezzi convenienti ed esplorare il centro storico a piedi. La migliore soluzione di parcheggio per chi visita Firenze.",
+    "tableTitle": "Tariffe Parcheggio",
     "daily": "Giornaliero",
     "weekly": "Settimanale",
     "dailyPrice": "€ 20 al giorno",
     "weeklyPrice": "€ 120 a settimana",
-    "contact": "Stai pianificando la tua visita? Contatta lorenzoelorenzo@libero.it per disponibilità e prenotazioni di parcheggio.",
-    "contactCta": "Richiedi disponibilità parcheggio",
-    "bulletsTitle": "Perché il nostro parcheggio funziona bene",
+    "contact": "Stai pianificando la tua visita a Firenze? Contatta lorenzoelorenzo@libero.it per disponibilità e prenotazioni.",
+    "contactCta": "Prenota parcheggio ora",
+    "bulletsTitle": "Perché scegliere il nostro parcheggio a Firenze",
     "items": {
-      "location": "Posizione strategica appena fuori dalla ZTL, vicina al centro storico.",
-      "pricing": "Prezzi competitivi sia che resti poche notti o più giorni.",
-      "booking": "Ti consigliamo di prenotare in anticipo, soprattutto durante l'alta stagione, per assicurarti il posto."
+      "location": "Posizione strategica appena fuori dalla ZTL, vicino al centro storico di Firenze e alle principali attrazioni.",
+      "pricing": "Tariffe parcheggio Firenze convenienti – prezzi competitivi per soggiorni brevi e lunghi.",
+      "booking": "Prenota in anticipo per parcheggio garantito, specialmente durante l'alta stagione turistica a Firenze."
     },
     "nearbyPlaces": {
       "michelangelo": "Piazzale Michelangelo",
       "boboli": "Giardino di Boboli",
       "pitti": "Palazzo Pitti",
-      "uffizi": "Uffizi"
+      "uffizi": "Galleria degli Uffizi"
     }
   },
   "faq": {
-    "title": "Buono a sapersi",
-    "subtitle": "Alcune rapide risposte alle domande che gli ospiti pongono più spesso.",
+    "title": "FAQ Viaggio a Firenze",
+    "subtitle": "Risposte su tassa di soggiorno Firenze, parcheggio, check-in e altro.",
     "items": {
       "lateCheckin": {
-        "q": "Posso arrivare tardi?",
-        "a": "Sì, gli arrivi tardivi sono possibili. Facci sapere l'orario previsto e ti invieremo noi stessi tutte le istruzioni."
+        "q": "Posso arrivare tardi al mio alloggio a Firenze?",
+        "a": "Sì! Gli arrivi tardivi non sono un problema da Lorenzo & Lorenzo. Comunicaci l'orario previsto di arrivo e organizzeremo il self check-in direttamente con te. Tutti i nostri appartamenti e camere a Firenze offrono check-in flessibile."
       },
       "luggage": {
-        "q": "Posso lasciare i miei bagagli?",
-        "a": "Di solito possiamo depositare i bagagli prima del check-in o dopo il check-out. Fatecelo sapere in anticipo in modo che possiamo organizzarlo."
+        "q": "Posso lasciare i bagagli prima del check-in o dopo il check-out?",
+        "a": "Sì, offriamo deposito bagagli gratuito per i nostri ospiti. Avvisaci in anticipo e organizzeremo un deposito sicuro – perfetto per esplorare Firenze il giorno di arrivo o partenza."
       },
       "parking": {
-        "q": "Hai un parcheggio?",
-        "a": "Sì. Offriamo un parcheggio privato appena fuori dalla ZTL con tariffe giornaliere e settimanali. Consulta la sezione Parcheggi per i dettagli."
+        "q": "Esiste un parcheggio economico nel centro di Firenze?",
+        "a": "Sì! Offriamo parcheggio privato appena fuori dalla ZTL a €20/giorno o €120/settimana – una delle opzioni di parcheggio più convenienti vicino al centro di Firenze. Vedi la sezione Parcheggio per tutti i dettagli."
       },
       "touristTax": {
-        "q": "Esiste una tassa di soggiorno a Firenze?",
-        "a": "Gli ospiti pagano una tassa di soggiorno a partire da € 6,00 per persona per notte, fino a 7 notti, come parte della prenotazione. Lo stabilisce il Comune di Firenze. Chiamaci per dettagli specifici."
+        "q": "Cos'è la tassa di soggiorno a Firenze?",
+        "a": "Firenze applica una tassa di soggiorno a partire da €6,00 per persona per notte, fino a 7 notti. Questa tassa è stabilita dal Comune di Firenze e si applica a tutti gli alloggi. Contattaci per le tariffe specifiche in base al tipo di alloggio."
       }
     }
   },
@@ -233,14 +233,14 @@
     "email": "lorenzoelorenzo@libero.it",
     "whatsapp": "Contattaci su WhatsApp",
     "propertyCTA": {
-      "intro": "Sei proprietario di una struttura e ti serve la gestione?",
-      "invite": "Contattaci e scopri il nostro modo di lavorare",
-      "connector": "e guarda il nostro deck",
+      "intro": "Sei proprietario e cerchi gestione Airbnb a Firenze?",
+      "invite": "Scopri i nostri servizi di gestione case vacanza e affitti brevi",
+      "connector": "e guarda il nostro approccio",
       "approachLinkLabel": "qui",
       "deckLinkLabel": "qui"
     },
-    "touristTaxNote": "Gli ospiti che prenotano soggiorni a Firenze pagano la tassa di soggiorno comunale a partire da € 6,00 per persona per notte (fino a 7 notti). Chiamaci per i dettagli.",
-    "copyright": "© 2025 Lorenzo & Lorenzo. Tutti i diritti riservati."
+    "touristTaxNote": "Tassa di soggiorno Firenze: da €6,00 per persona per notte (fino a 7 notti). Chiamaci per dettagli.",
+    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Camere e Appartamenti Firenze"
   },
   "notFound": {
     "title": "Pagina non trovata",
