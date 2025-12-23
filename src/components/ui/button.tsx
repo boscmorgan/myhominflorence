@@ -14,6 +14,7 @@ const buttonVariants = cva(
         outline: "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
+        glass: "rounded-full border border-border/60 bg-background/40 text-primary-foreground hover:bg-background/60 hover:border-border/80 backdrop-blur-sm shadow-lg",
         link: "text-primary underline-offset-4 hover:underline",
         airbnb: "bg-airbnb text-airbnb-foreground hover:bg-airbnb/90",
         booking: "bg-booking text-booking-foreground hover:bg-booking/90",

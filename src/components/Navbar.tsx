@@ -85,9 +85,10 @@ const Navbar = () => {
           </button>
 
           <Button
+            variant="glass"
             size="default"
             onClick={() => scrollToSection('contact')}
-            className="px-5"
+            className="px-6 py-2.5 sm:px-7 sm:py-3"
           >
             {t('cta.button')}
           </Button>

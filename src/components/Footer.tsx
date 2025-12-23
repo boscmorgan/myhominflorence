@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
+import { cn } from '@/lib/utils';
+
 const languages = [
   { code: 'en', label: 'EN' },
   { code: 'it', label: 'IT' },
@@ -160,16 +162,16 @@ const Footer = () => {
                 aria-haspopup="listbox"
                 aria-expanded={isLangOpen}
                 onClick={() => setIsLangOpen((prev) => !prev)}
-                className="inline-flex items-center gap-1 rounded-full border border-primary-foreground/40 bg-background/70 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-primary-foreground transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                className="inline-flex items-center gap-1 rounded-full border border-border/70 bg-foreground/5 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-foreground transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 <span>{selectedLanguage.label}</span>
-                <ChevronDown size={14} className="text-primary-foreground/70" />
+                <ChevronDown size={14} className="text-foreground/70" />
               </button>
               {isLangOpen && (
                 <ul
                   role="listbox"
                   aria-label={t('nav.language')}
-                  className="absolute right-0 z-10 bottom-full mb-2 w-32 space-y-1 rounded-2xl border border-border bg-background shadow-lg p-2 text-sm"
+                  className="absolute right-0 z-10 bottom-full mb-2 w-32 space-y-1 rounded-2xl border border-border bg-card/95 shadow-lg p-2 text-sm text-foreground"
                 >
                   {languages.map((lang) => (
                     <li key={lang.code}>
@@ -184,11 +186,12 @@ const Footer = () => {
                           }
                           setIsLangOpen(false);
                         }}
-                        className={`w-full text-left rounded-xl px-3 py-2 text-primary-foreground transition ${
+                        className={cn(
+                          "w-full text-left rounded-xl px-3 py-2 text-foreground transition-colors",
                           selectedLanguage.code === lang.code
-                            ? 'bg-teal/10 text-teal'
-                            : 'hover:bg-foreground/5'
-                        }`}
+                            ? "bg-teal/10 text-teal font-semibold"
+                            : "hover:bg-foreground/5",
+                        )}
                       >
                         {lang.label}
                       </button>
