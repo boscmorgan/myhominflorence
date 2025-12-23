@@ -17,12 +17,20 @@ const HeroSection = () => {
   const [displayedText, setDisplayedText] = useState('');
   const [parallaxOffset, setParallaxOffset] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [viewportHeight, setViewportHeight] = useState('100vh');
   const sectionRef = useRef<HTMLElement>(null);
 
   // Trigger zoom animation on mount
   useEffect(() => {
     const timer = setTimeout(() => setIsLoaded(true), 100);
     return () => clearTimeout(timer);
+  }, []);
+
+  useEffect(() => {
+    const updateHeroHeight = () => setViewportHeight(`${window.innerHeight}px`);
+    updateHeroHeight();
+    window.addEventListener('resize', updateHeroHeight, { passive: true });
+    return () => window.removeEventListener('resize', updateHeroHeight);
   }, []);
 
   // Parallax scroll effect
@@ -136,27 +144,28 @@ const HeroSection = () => {
     <section
       ref={sectionRef}
       id="hero"
-      className="relative h-screen flex items-center justify-center overflow-hidden"
+      style={{ height: viewportHeight }}
+      className="relative w-full min-h-screen overflow-hidden flex items-center justify-center"
     >
       <div className="absolute inset-0 overflow-hidden">
-        <div
-          className="absolute inset-0 will-change-transform transition-transform duration-[2000ms] ease-out"
-          style={{ transform: `translateY(${parallaxOffset}px) scale(${isLoaded ? 1.12 : 1.18})` }}
-        >
-          <div className="absolute inset-0 overflow-hidden">
-            <iframe
-              title="Florence skyliner behind Lorenzo & Lorenzo hero"
-              src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}${YOUTUBE_EMBED_PARAMS}`}
-              className="absolute top-[50%] left-[50%] h-full w-[190%] min-h-full min-w-full -translate-x-1/2 -translate-y-1/2 scale-[1.05]"
-              allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-              allowFullScreen
-            />
+          <div
+            className="absolute inset-0 will-change-transform transition-transform duration-[2000ms] ease-out"
+            style={{ transform: `translateY(${parallaxOffset}px) scale(${isLoaded ? 1.55 : 1.65})` }}
+          >
+            <div className="absolute inset-0 overflow-hidden">
+              <iframe
+                title="Florence skyliner behind Lorenzo & Lorenzo hero"
+                src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}${YOUTUBE_EMBED_PARAMS}`}
+                className="absolute top-[50%] left-[50%] h-[210%] w-[280%] sm:h-[190%] sm:w-[260%] -translate-x-1/2 -translate-y-1/2"
+                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
           </div>
-        </div>
         <div className="absolute inset-0 bg-primary/70 backdrop-blur-xs" />
       </div>
 
-      <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-5xl h-full py-16 sm:py-20 md:py-24 px-4 sm:px-6">
+      <div className="relative z-10 flex flex-col items-center justify-center w-full max-w-5xl h-full box-border py-16 sm:py-20 md:py-24 px-4 sm:px-6">
         <div className="space-y-3 sm:space-y-4 text-center mb-8 sm:mb-10 md:mb-12">
           <h1 className="font-teko text-[2rem] sm:text-[2.6rem] md:text-[3.4rem] leading-[1.05] font-bold text-primary-foreground mb-2 flex flex-wrap justify-center gap-x-2 sm:gap-x-3 gap-y-1 sm:gap-y-2">
             <span className="inline-block min-w-[10ch] sm:min-w-[12ch] text-center">
