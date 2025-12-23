@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://myhomeinflorence.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myhomeinflorence.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://myhomeinflorence.com/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://myhomeinflorence.com/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myhomeinflorence.com/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myhomeinflorence.com/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myhomeinflorence.com/"/>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
