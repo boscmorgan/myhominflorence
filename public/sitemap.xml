@@ -1,16 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Main page - English (default) -->
   <url>
     <loc>https://myhomeinflorence.com/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://myhomeinflorence.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myhomeinflorence.com/"/>
     <xhtml:link rel="alternate" hreflang="it" href="https://myhomeinflorence.com/?lang=it"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://myhomeinflorence.com/?lang=es"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://myhomeinflorence.com/?lang=ru"/>
     <xhtml:link rel="alternate" hreflang="zh" href="https://myhomeinflorence.com/?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://myhomeinflorence.com/"/>
-    <lastmod>2025-01-01</lastmod>
+    <lastmod>2026-01-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Italian version -->
+  <url>
+    <loc>https://myhomeinflorence.com/?lang=it</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myhomeinflorence.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://myhomeinflorence.com/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://myhomeinflorence.com/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myhomeinflorence.com/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myhomeinflorence.com/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myhomeinflorence.com/"/>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Spanish version -->
+  <url>
+    <loc>https://myhomeinflorence.com/?lang=es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myhomeinflorence.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://myhomeinflorence.com/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://myhomeinflorence.com/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myhomeinflorence.com/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myhomeinflorence.com/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myhomeinflorence.com/"/>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Russian version -->
+  <url>
+    <loc>https://myhomeinflorence.com/?lang=ru</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myhomeinflorence.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://myhomeinflorence.com/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://myhomeinflorence.com/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myhomeinflorence.com/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myhomeinflorence.com/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myhomeinflorence.com/"/>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Chinese version -->
+  <url>
+    <loc>https://myhomeinflorence.com/?lang=zh</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://myhomeinflorence.com/"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://myhomeinflorence.com/?lang=it"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://myhomeinflorence.com/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://myhomeinflorence.com/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://myhomeinflorence.com/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://myhomeinflorence.com/"/>
+    <lastmod>2026-01-07</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
 </urlset>
