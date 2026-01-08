@@ -134,6 +134,38 @@ const Index = () => {
                 "@type": "Answer",
                 "text": "Yes, we can usually store your luggage before check-in or after check-out. Let us know in advance so we can arrange it."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "Is this better than booking on Airbnb?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! Booking directly with us means no Airbnb service fees, direct communication with your hosts Lorenzo & Lorenzo, and often better rates. Same quality rooms, better value."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is San Niccolò in Florence?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "San Niccolò is an authentic neighborhood in Florence's Oltrarno district, just across the Arno from the historic center. It's a 10-minute walk to Ponte Vecchio and offers a local, less touristy atmosphere with excellent restaurants and bars."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you manage Airbnb properties in Florence?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, we offer professional Airbnb and vacation rental property management services in Florence and Tuscany. We handle guest communication, check-ins, cleaning, and listing optimization for property owners."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How far are you from Florence train station?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We are about 25 minutes walk or 10 minutes by taxi/bus from Santa Maria Novella train station. Our location in San Niccolò is quieter but still very central to all major attractions."
+              }
             }
           ]
         },
