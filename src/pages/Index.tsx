@@ -211,25 +211,27 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <HeroSection />
-      <ScrollReveal>
-        <AboutSection />
-      </ScrollReveal>
-      <ScrollReveal delay={100}>
-        <NeighborhoodSection />
-      </ScrollReveal>
-      <ScrollReveal delay={100}>
-        <RoomsSection />
-      </ScrollReveal>
-      <ScrollReveal>
-        <ParkingSection />
-      </ScrollReveal>
-      <ScrollReveal delay={100}>
-        <HostsSection />
-      </ScrollReveal>
-      <ScrollReveal>
-        <FAQSection />
-      </ScrollReveal>
+      <main>
+        <HeroSection />
+        <ScrollReveal>
+          <AboutSection />
+        </ScrollReveal>
+        <ScrollReveal delay={100}>
+          <NeighborhoodSection />
+        </ScrollReveal>
+        <ScrollReveal delay={100}>
+          <RoomsSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <ParkingSection />
+        </ScrollReveal>
+        <ScrollReveal delay={100}>
+          <HostsSection />
+        </ScrollReveal>
+        <ScrollReveal>
+          <FAQSection />
+        </ScrollReveal>
+      </main>
       <Footer />
     </div>
   );

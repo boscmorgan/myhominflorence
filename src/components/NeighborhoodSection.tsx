@@ -10,11 +10,11 @@ const NeighborhoodSection = () => {
   const { t } = useTranslation();
 
   const images = [
-    { src: quartiere1, alt: t('neighborhood.images.gallery') },
-    { src: quartiere2, alt: t('neighborhood.images.gallery') },
-    { src: quartiere3, alt: t('neighborhood.images.gallery') },
-    { src: quartiere4, alt: t('neighborhood.images.gallery') },
-    { src: quartiere5, alt: t('neighborhood.images.piazza') }
+    { src: quartiere1, alt: t('neighborhood.images.quartiere1') },
+    { src: quartiere2, alt: t('neighborhood.images.quartiere2') },
+    { src: quartiere3, alt: t('neighborhood.images.quartiere3') },
+    { src: quartiere4, alt: t('neighborhood.images.quartiere4') },
+    { src: quartiere5, alt: t('neighborhood.images.quartiere5') }
   ];
 
   return (

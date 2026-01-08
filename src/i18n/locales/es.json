@@ -47,8 +47,11 @@
       "uffizi": "Galería de los Uffizi • 12 minutos a pie"
     },
     "images": {
-      "gallery": "Calle iluminada por el sol en San Niccolò",
-      "piazza": "Plaza de Florencia cerca del Arno"
+      "quartiere1": "Calle iluminada por el sol en San Niccolò Florencia con cafés y tiendas locales",
+      "quartiere2": "Edificios históricos a lo largo de Via di San Niccolò en el Oltrarno florentino",
+      "quartiere3": "Vista del río Arno desde el barrio San Niccolò Florencia",
+      "quartiere4": "Arquitectura tradicional florentina en el distrito de San Niccolò",
+      "quartiere5": "Plaza San Niccolò junto a la antigua puerta de la ciudad Florencia"
     },
     "extraNote": "También tenemos habitaciones y apartamentos en distintas zonas de Florencia. Consulta Booking.com y Airbnb para ver la disponibilidad."
   },
@@ -234,10 +237,10 @@
     "whatsapp": "Escríbenos por WhatsApp",
     "propertyCTA": {
       "intro": "¿Eres propietario y buscas gestión Airbnb en Florencia?",
-      "invite": "Descubre nuestros servicios de gestión de alquileres vacacionales",
-      "connector": "y conoce nuestro enfoque",
-      "approachLinkLabel": "aquí",
-      "deckLinkLabel": "aquí"
+      "invite": "Descubre nuestros",
+      "connector": "y conoce nuestro",
+      "approachLinkLabel": "servicios de gestión de alquileres vacacionales",
+      "deckLinkLabel": "enfoque de gestión de propiedades"
     },
     "touristTaxNote": "Tasa turística Florencia: desde €6,00 por persona por noche (hasta 7 noches). Llámanos para detalles.",
     "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Habitaciones y Apartamentos Florencia"
