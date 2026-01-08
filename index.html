@@ -14,7 +14,7 @@
     <!-- Primary SEO Meta Tags -->
     <title>Rooms & Apartments Florence Center | My Home in Florence</title>
     <meta name="description" content="Book cozy rooms & apartments near Ponte Vecchio. Self check-in, free parking tips, 4.68★ rating. Direct booking – save on fees!" />
-    <meta name="keywords" content="Florence apartments, Airbnb Florence, rooms Florence center, vacation rental Florence, affordable accommodation Florence, San Niccolò Florence, Ponte Vecchio accommodation, Florence tourist tax, tassa di soggiorno Firenze, parking Florence ZTL, Airbnb management Florence, property management Tuscany, vacation rental management Italy, myhomeinflorence" />
+    <meta name="keywords" content="Florence apartments, Airbnb Florence, rooms Florence center, vacation rental Florence, affordable accommodation Florence, San Niccolò Florence, Ponte Vecchio accommodation, Florence tourist tax, tassa di soggiorno Firenze, parking Florence ZTL, Airbnb management Florence, property management Tuscany, vacation rental management Italy, myhomeinflorence, where to stay in Florence, best neighborhood Florence, cheap hotels Florence, bed and breakfast Florence Italy, Florence Italy accommodation, appartamenti Firenze centro, affitto breve Firenze, gestione affitti turistici Firenze" />
     <meta name="author" content="Lorenzo & Lorenzo" />
     <meta name="robots" content="index, follow" />
     <meta name="google-site-verification" content="7MqyAAB9BzcrcEOpGe1e-i-Usy_95omfFr98vmgeMXA" />
@@ -54,35 +54,85 @@
     <!-- Additional SEO -->
     <meta name="theme-color" content="#4C847C" />
     
-    <!-- Structured Data for LodgingBusiness -->
+    <!-- Structured Data for LodgingBusiness + Organization -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LodgingBusiness",
-      "name": "My Home in Florence - Lorenzo & Lorenzo",
-      "description": "Cozy rooms and apartments in Florence city center near Ponte Vecchio",
-      "url": "https://myhomeinflorence.com",
-      "image": "https://myhomeinflorence.com/og-image.jpg",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Florence",
-        "addressRegion": "Tuscany",
-        "addressCountry": "IT"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "43.7646",
-        "longitude": "11.2611"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.68",
-        "reviewCount": "1700"
-      },
-      "amenityFeature": [
-        {"@type": "LocationFeatureSpecification", "name": "Self Check-in"},
-        {"@type": "LocationFeatureSpecification", "name": "Free Parking Tips"},
-        {"@type": "LocationFeatureSpecification", "name": "City Center Location"}
+      "@graph": [
+        {
+          "@type": ["LodgingBusiness", "LocalBusiness"],
+          "@id": "https://myhomeinflorence.com/#business",
+          "name": "My Home in Florence - Lorenzo & Lorenzo",
+          "alternateName": ["myhomeinflorence", "Lorenzo & Lorenzo Florence"],
+          "description": "Cozy rooms and apartments in Florence city center near Ponte Vecchio. Better than Airbnb - book direct and save on fees.",
+          "url": "https://myhomeinflorence.com",
+          "telephone": "+39 339 1554694",
+          "email": "lorenzoelorenzo@libero.it",
+          "image": ["https://myhomeinflorence.com/og-image.jpg"],
+          "logo": "https://myhomeinflorence.com/favicon.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Via di San Niccolò 63",
+            "addressLocality": "Florence",
+            "postalCode": "50125",
+            "addressRegion": "Tuscany",
+            "addressCountry": "IT"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 43.7646,
+            "longitude": 11.2611
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.68",
+            "bestRating": "5",
+            "worstRating": "1",
+            "reviewCount": "1700"
+          },
+          "priceRange": "€€",
+          "currenciesAccepted": "EUR",
+          "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+          "amenityFeature": [
+            {"@type": "LocationFeatureSpecification", "name": "Self Check-in", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Free Wi-Fi", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Luggage Storage", "value": true},
+            {"@type": "LocationFeatureSpecification", "name": "Parking Available", "value": true}
+          ],
+          "hasMap": "https://maps.google.com/?q=43.7646,11.2611",
+          "sameAs": [
+            "https://www.airbnb.com/users/show/64614894",
+            "https://www.booking.com/searchresults.html?ss=My+Home+in+Florence"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://myhomeinflorence.com/#organization",
+          "name": "Lorenzo & Lorenzo",
+          "url": "https://myhomeinflorence.com",
+          "logo": "https://myhomeinflorence.com/favicon.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+39 339 1554694",
+            "contactType": "reservations",
+            "availableLanguage": ["English", "Italian", "Spanish", "Russian", "Chinese"]
+          }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://myhomeinflorence.com/#website",
+          "url": "https://myhomeinflorence.com",
+          "name": "My Home in Florence",
+          "publisher": {"@id": "https://myhomeinflorence.com/#organization"},
+          "inLanguage": ["en", "it", "es", "ru", "zh"]
+        }
       ]
     }
     </script>
