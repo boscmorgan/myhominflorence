@@ -47,8 +47,11 @@
       "uffizi": "乌菲兹美术馆 • 步行 12 分钟"
     },
     "images": {
-      "gallery": "圣尼科洛阳光明媚的街道",
-      "piazza": "佛罗伦萨阿诺河附近的广场"
+      "quartiere1": "佛罗伦萨圣尼科洛阳光明媚的街道，咖啡馆和当地商店",
+      "quartiere2": "佛罗伦萨奥特拉诺圣尼科洛大街的历史建筑",
+      "quartiere3": "从圣尼科洛社区眺望佛罗伦萨阿诺河",
+      "quartiere4": "圣尼科洛区的传统佛罗伦萨建筑",
+      "quartiere5": "佛罗伦萨古城门旁的圣尼科洛广场"
     },
     "extraNote": "我们在佛罗伦萨各区也有客房和公寓。请在 Booking.com 和 Airbnb 上查看可用房源。"
   },
@@ -234,10 +237,10 @@
     "whatsapp": "通过 WhatsApp 联系我们",
     "propertyCTA": {
       "intro": "房产业主在寻找佛罗伦萨 Airbnb 管理服务？",
-      "invite": "了解我们的度假租赁物业管理服务",
-      "connector": "并查看我们的方法",
-      "approachLinkLabel": "点击这里",
-      "deckLinkLabel": "点击这里"
+      "invite": "了解我们的",
+      "connector": "并查看我们的",
+      "approachLinkLabel": "度假租赁管理服务",
+      "deckLinkLabel": "物业管理方法"
     },
     "touristTaxNote": "佛罗伦萨旅游税：每人每晚 €6.00 起（最多 7 晚）。请致电了解详情。",
     "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | 佛罗伦萨客房和公寓"

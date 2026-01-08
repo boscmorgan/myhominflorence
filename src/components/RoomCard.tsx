@@ -210,14 +210,14 @@ const RoomCard = ({
           <div className="flex flex-wrap items-center gap-2">
             {airbnbUrl && (
               <Button variant="airbnb" className="px-3 sm:px-4 py-2 text-[0.7rem] sm:text-xs md:text-sm flex-1 sm:flex-none" asChild>
-                <a href={airbnbUrl} target="_blank" rel="noreferrer">
+                <a href={airbnbUrl} target="_blank" rel="noopener noreferrer" aria-label={`Book ${title} on Airbnb`}>
                   {t('rooms.platforms.airbnb')}
                 </a>
               </Button>
             )}
             {bookingUrl && (
               <Button variant="booking" className="px-3 sm:px-4 py-2 text-[0.7rem] sm:text-xs md:text-sm flex-1 sm:flex-none" asChild>
-                <a href={bookingUrl} target="_blank" rel="noreferrer">
+                <a href={bookingUrl} target="_blank" rel="noopener noreferrer" aria-label={`Book ${title} on Booking.com`}>
                   {t('rooms.platforms.booking')}
                 </a>
               </Button>

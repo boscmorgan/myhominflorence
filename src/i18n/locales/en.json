@@ -48,8 +48,11 @@
       "uffizi": "Uffizi • 12 min walk"
     },
     "images": {
-      "gallery": "Sunlit street in San Niccolò",
-      "piazza": "Florence piazza near the Arno"
+      "quartiere1": "Sunlit street in San Niccolò Florence with cafes and local shops",
+      "quartiere2": "Historic buildings along Via di San Niccolò in Florence Oltrarno",
+      "quartiere3": "Arno river view from San Niccolò neighborhood Florence",
+      "quartiere4": "Traditional Florentine architecture in San Niccolò district",
+      "quartiere5": "Piazza San Niccolò near the ancient city gate Florence"
     }
   },
   "rooms": {
@@ -234,10 +237,10 @@
     "whatsapp": "Contact us on WhatsApp",
     "propertyCTA": {
       "intro": "Property owner looking for Airbnb management in Florence?",
-      "invite": "Discover our vacation rental property management services",
-      "connector": "and view our approach",
-      "approachLinkLabel": "here",
-      "deckLinkLabel": "here"
+      "invite": "Discover our",
+      "connector": "and view our",
+      "approachLinkLabel": "vacation rental management services",
+      "deckLinkLabel": "property management approach"
     },
     "touristTaxNote": "Florence tourist tax (tassa di soggiorno): from €6.00 per person per night (up to 7 nights). Call us for details.",
     "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Rooms & Apartments Florence"

@@ -48,8 +48,11 @@
       "uffizi": "Uffizi • 12 min a piedi"
     },
     "images": {
-      "gallery": "Strada soleggiata a San Niccolò",
-      "piazza": "Piazza di Firenze vicino all'Arno"
+      "quartiere1": "Strada soleggiata a San Niccolò Firenze con caffè e negozi locali",
+      "quartiere2": "Edifici storici lungo Via di San Niccolò nell'Oltrarno fiorentino",
+      "quartiere3": "Vista del fiume Arno dal quartiere San Niccolò Firenze",
+      "quartiere4": "Architettura tradizionale fiorentina nel rione di San Niccolò",
+      "quartiere5": "Piazza San Niccolò presso l'antica porta della città Firenze"
     }
   },
   "rooms": {
@@ -234,10 +237,10 @@
     "whatsapp": "Contattaci su WhatsApp",
     "propertyCTA": {
       "intro": "Sei proprietario e cerchi gestione Airbnb a Firenze?",
-      "invite": "Scopri i nostri servizi di gestione case vacanza e affitti brevi",
-      "connector": "e guarda il nostro approccio",
-      "approachLinkLabel": "qui",
-      "deckLinkLabel": "qui"
+      "invite": "Scopri i nostri",
+      "connector": "e guarda il nostro",
+      "approachLinkLabel": "servizi di gestione case vacanza",
+      "deckLinkLabel": "approccio alla gestione immobiliare"
     },
     "touristTaxNote": "Tassa di soggiorno Firenze: da €6,00 per persona per notte (fino a 7 notti). Chiamaci per dettagli.",
     "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Camere e Appartamenti Firenze"
