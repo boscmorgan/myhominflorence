@@ -1,0 +1,55 @@
+{
+  "redirects": [
+    {
+      "source": "/it/:path*",
+      "destination": "/?lang=it",
+      "permanent": true
+    },
+    {
+      "source": "/es/:path*",
+      "destination": "/?lang=es",
+      "permanent": true
+    },
+    {
+      "source": "/ru/:path*",
+      "destination": "/?lang=ru",
+      "permanent": true
+    },
+    {
+      "source": "/zh/:path*",
+      "destination": "/?lang=zh",
+      "permanent": true
+    },
+    {
+      "source": "/listing/it/:path*",
+      "destination": "/?lang=it",
+      "permanent": true
+    },
+    {
+      "source": "/listing/es/:path*",
+      "destination": "/?lang=es",
+      "permanent": true
+    },
+    {
+      "source": "/listing/ru/:path*",
+      "destination": "/?lang=ru",
+      "permanent": true
+    },
+    {
+      "source": "/listing/zh/:path*",
+      "destination": "/?lang=zh",
+      "permanent": true
+    },
+    {
+      "source": "/listing/:path*",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!api/.*).*)",
+      "destination": "/index.html"
+    }
+  ]
+}
