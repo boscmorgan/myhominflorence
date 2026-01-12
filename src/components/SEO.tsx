@@ -17,8 +17,8 @@ export const SEO = ({
   keywords,
   ogTitle,
   ogDescription,
-  ogImage = 'https://myhomeinflorence.com/og-image.jpg',
-  canonicalUrl = 'https://myhomeinflorence.com'
+  ogImage = 'https://www.myhomeinflorence.com/og-image.jpg',
+  canonicalUrl = 'https://www.myhomeinflorence.com'
 }: SEOProps) => {
   const { t, i18n } = useTranslation();
 
@@ -56,12 +56,12 @@ export const SEO = ({
       <meta name="twitter:image" content={ogImage} />
 
       {/* Hreflang tags */}
-      <link rel="alternate" hreflang="en" href="https://myhomeinflorence.com" />
-      <link rel="alternate" hreflang="it" href="https://myhomeinflorence.com?lang=it" />
-      <link rel="alternate" hreflang="es" href="https://myhomeinflorence.com?lang=es" />
-      <link rel="alternate" hreflang="ru" href="https://myhomeinflorence.com?lang=ru" />
-      <link rel="alternate" hreflang="zh" href="https://myhomeinflorence.com?lang=zh" />
-      <link rel="alternate" hreflang="x-default" href="https://myhomeinflorence.com" />
+      <link rel="alternate" hreflang="en" href="https://www.myhomeinflorence.com" />
+      <link rel="alternate" hreflang="it" href="https://www.myhomeinflorence.com?lang=it" />
+      <link rel="alternate" hreflang="es" href="https://www.myhomeinflorence.com?lang=es" />
+      <link rel="alternate" hreflang="ru" href="https://www.myhomeinflorence.com?lang=ru" />
+      <link rel="alternate" hreflang="zh" href="https://www.myhomeinflorence.com?lang=zh" />
+      <link rel="alternate" hreflang="x-default" href="https://www.myhomeinflorence.com" />
     </Helmet>
   );
 };

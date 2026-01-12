@@ -28,11 +28,11 @@ const Index = () => {
       "@graph": [
         {
           "@type": "LodgingBusiness",
-          "@id": "https://myhomeinflorence.com/#lodging",
+          "@id": "https://www.myhomeinflorence.com/#lodging",
           "name": "Lorenzo & Lorenzo Rooms & Apartments",
           "alternateName": ["myhomeinflorence", "My Home in Florence BnB", "My Home in Florence B&B", "myhomeinflorence.com", "Lorenzo & Lorenzo Florence"],
           "description": t('hero.valueProp'),
-          "url": "https://myhomeinflorence.com",
+          "url": "https://www.myhomeinflorence.com",
           "telephone": ["+39 055 2638097", "+39 339 1554694", "+39 389 0108370"],
           "email": "lorenzoelorenzo@libero.it",
           "address": {
@@ -48,7 +48,7 @@ const Index = () => {
             "latitude": 43.7646,
             "longitude": 11.2611
           },
-          "image": "https://myhomeinflorence.com/og-image.jpg",
+          "image": "https://www.myhomeinflorence.com/og-image.jpg",
           "priceRange": "€€",
           "aggregateRating": {
             "@type": "AggregateRating",
@@ -77,7 +77,7 @@ const Index = () => {
         },
         {
           "@type": "ParkingFacility",
-          "@id": "https://myhomeinflorence.com/#parking",
+          "@id": "https://www.myhomeinflorence.com/#parking",
           "name": "Lorenzo & Lorenzo Parking Florence",
           "description": "Affordable parking outside Florence ZTL near historic center. Daily €20, weekly €120.",
           "address": {
@@ -90,7 +90,7 @@ const Index = () => {
         },
         {
           "@type": "Service",
-          "@id": "https://myhomeinflorence.com/#property-management",
+          "@id": "https://www.myhomeinflorence.com/#property-management",
           "name": "Airbnb & Vacation Rental Property Management Florence",
           "description": "Professional property management services for Airbnb hosts and vacation rental owners in Florence and Tuscany. Guest hosting, listing optimization, and full management.",
           "provider": {
@@ -102,7 +102,7 @@ const Index = () => {
         },
         {
           "@type": "FAQPage",
-          "@id": "https://myhomeinflorence.com/#faq",
+          "@id": "https://www.myhomeinflorence.com/#faq",
           "mainEntity": [
             {
               "@type": "Question",
@@ -172,25 +172,25 @@ const Index = () => {
         },
         {
           "@type": "WebSite",
-          "@id": "https://myhomeinflorence.com/#website",
-          "url": "https://myhomeinflorence.com",
+          "@id": "https://www.myhomeinflorence.com/#website",
+          "url": "https://www.myhomeinflorence.com",
           "name": "Lorenzo & Lorenzo - myhomeinflorence.com",
           "description": "Affordable rooms and apartments in Florence city center. Alternative to Airbnb with direct booking. Property management services.",
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://myhomeinflorence.com/?search={search_term_string}",
+            "target": "https://www.myhomeinflorence.com/?search={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         },
         {
           "@type": "BreadcrumbList",
-          "@id": "https://myhomeinflorence.com/#breadcrumb",
+          "@id": "https://www.myhomeinflorence.com/#breadcrumb",
           "itemListElement": [
             {
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://myhomeinflorence.com"
+              "item": "https://www.myhomeinflorence.com"
             }
           ]
         }

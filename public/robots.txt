@@ -1,5 +1,5 @@
-# Preferred host (non-www)
-Host: https://myhomeinflorence.com
+# Preferred host (www)
+Host: https://www.myhomeinflorence.com
 
 # Allow all major crawlers on the main site
 User-agent: Googlebot
@@ -36,4 +36,4 @@ Disallow: /ru/
 Disallow: /zh/
 
 # Sitemap location
-Sitemap: https://myhomeinflorence.com/sitemap.xml
+Sitemap: https://www.myhomeinflorence.com/sitemap.xml

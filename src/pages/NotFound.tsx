@@ -39,7 +39,7 @@ const NotFound = () => {
       <Helmet>
         <title>Page Not Found | My Home in Florence</title>
         <meta name="robots" content="noindex, follow" />
-        <link rel="canonical" href="https://myhomeinflorence.com/" />
+        <link rel="canonical" href="https://www.myhomeinflorence.com/" />
       </Helmet>
       <div className="flex min-h-screen items-center justify-center bg-muted">
         <div className="text-center">
