@@ -10,6 +10,7 @@ import ParkingSection from '@/components/ParkingSection';
 import FAQSection from '@/components/FAQSection';
 import Footer from '@/components/Footer';
 import { ScrollReveal } from '@/components/ScrollReveal';
+import { SEO } from '@/components/SEO';
 
 const Index = () => {
   const { t, i18n } = useTranslation();
@@ -29,7 +30,7 @@ const Index = () => {
           "@type": "LodgingBusiness",
           "@id": "https://myhomeinflorence.com/#lodging",
           "name": "Lorenzo & Lorenzo Rooms & Apartments",
-          "alternateName": "myhomeinflorence.com",
+          "alternateName": ["myhomeinflorence", "My Home in Florence BnB", "My Home in Florence B&B", "myhomeinflorence.com", "Lorenzo & Lorenzo Florence"],
           "description": t('hero.valueProp'),
           "url": "https://myhomeinflorence.com",
           "telephone": ["+39 055 2638097", "+39 339 1554694", "+39 389 0108370"],
@@ -210,6 +211,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO />
       <Navbar />
       <main>
         <HeroSection />

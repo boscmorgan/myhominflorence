@@ -249,5 +249,12 @@
     "title": "Страница не найдена",
     "description": "Страницы, которую вы искали, здесь нет или она могла быть перемещена.",
     "cta": "На главную"
+  },
+  "seo": {
+    "title": "My Home in Florence BnB | Апартаменты Флоренция | myhomeinflorence",
+    "description": "My Home in Florence B&B – уютные номера и апартаменты рядом с мостом Понте Веккьо от Lorenzo & Lorenzo. Самостоятельная регистрация, парковка, рейтинг 4,68★. Бронируйте на myhomeinflorence.com!",
+    "keywords": "myhomeinflorence, my home in florence, my home in florence bnb, гостиница Флоренция, апартаменты Флоренция, аренда Флоренция, Lorenzo & Lorenzo, жилье Флоренция, San Niccolò Флоренция, Понте Веккьо размещение, краткосрочная аренда Флоренция",
+    "ogTitle": "My Home in Florence BnB | Номера и Апартаменты Флоренция",
+    "ogDescription": "My Home in Florence B&B от Lorenzo & Lorenzo. Проживание рядом с Понте Веккьо с самостоятельной регистрацией и парковкой. Рейтинг 4,68★, 1700+ отзывов!"
   }
 }
