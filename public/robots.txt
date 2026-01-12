@@ -1,23 +1,24 @@
 # Preferred host (non-www)
 Host: https://myhomeinflorence.com
 
+# Allow all major crawlers on the main site
 User-agent: Googlebot
 Allow: /
+Allow: /?lang=*
 Disallow: /listing/
 Disallow: /it/
 Disallow: /es/
 Disallow: /ru/
 Disallow: /zh/
-Crawl-delay: 1
 
 User-agent: Bingbot
 Allow: /
+Allow: /?lang=*
 Disallow: /listing/
 Disallow: /it/
 Disallow: /es/
 Disallow: /ru/
 Disallow: /zh/
-Crawl-delay: 1
 
 User-agent: Twitterbot
 Allow: /
@@ -27,12 +28,12 @@ Allow: /
 
 User-agent: *
 Allow: /
+Allow: /?lang=*
 Disallow: /listing/
 Disallow: /it/
 Disallow: /es/
 Disallow: /ru/
 Disallow: /zh/
-Crawl-delay: 2
 
 # Sitemap location
 Sitemap: https://myhomeinflorence.com/sitemap.xml
