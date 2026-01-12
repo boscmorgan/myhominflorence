@@ -1,0 +1,25 @@
+RewriteEngine On
+
+# Force www to non-www
+RewriteCond %{HTTP_HOST} ^www\.myhomeinflorence\.com [NC]
+RewriteRule ^(.*)$ https://myhomeinflorence.com/$1 [R=301,L]
+
+# Legacy language path redirects
+RewriteRule ^it/(.*)$ /?lang=it [R=301,L]
+RewriteRule ^es/(.*)$ /?lang=es [R=301,L]
+RewriteRule ^ru/(.*)$ /?lang=ru [R=301,L]
+RewriteRule ^zh/(.*)$ /?lang=zh [R=301,L]
+
+# Legacy listing paths with language
+RewriteRule ^listing/it/(.*)$ /?lang=it [R=301,L]
+RewriteRule ^listing/es/(.*)$ /?lang=es [R=301,L]
+RewriteRule ^listing/ru/(.*)$ /?lang=ru [R=301,L]
+RewriteRule ^listing/zh/(.*)$ /?lang=zh [R=301,L]
+
+# All other listing paths
+RewriteRule ^listing/(.*)$ / [R=301,L]
+
+# SPA fallback - serve index.html for all routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [L]
