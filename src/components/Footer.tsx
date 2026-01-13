@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
@@ -151,7 +152,13 @@ const Footer = () => {
         </div>
 
         <div className="mt-6 sm:mt-8 md:mt-10 pt-4 sm:pt-6 border-t border-primary-foreground/20 text-xs sm:text-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-3 sm:gap-4">
-          <p className="text-primary-foreground/80">{t('footer.copyright')}</p>
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+            <p className="text-primary-foreground/80">{t('footer.copyright')}</p>
+            <span className="hidden sm:inline text-primary-foreground/40">|</span>
+            <Link to="/blog" className="text-primary-foreground/80 hover:text-primary-foreground underline underline-offset-4">
+              Travel Guide
+            </Link>
+          </div>
           <div className="flex items-center gap-2">
             <span className="text-[0.55rem] font-semibold uppercase tracking-[0.5em] text-primary-foreground/60">
               {t('nav.language')}
