@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { cn } from '@/lib/utils';
@@ -10,6 +11,8 @@ const Navbar = () => {
   const [isDarkMenuText, setIsDarkMenuText] = useState(false);
   const lastScrollY = useRef(0);
   const { t } = useTranslation();
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -79,29 +82,69 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 py-2">
         <div className="flex items-center justify-between gap-4 sm:gap-6">
-          <button
-            onClick={() => scrollToSection('hero')}
-            className="flex items-center gap-2 sm:gap-3 min-w-0"
-          >
-            <img src={logo} alt={t('nav.logoAlt')} className="h-10 sm:h-12 w-auto flex-shrink-0" />
-            <div className="text-left text-primary w-fit flex flex-col gap-0 min-w-0">
-              <span className={cn('font-semibold text-base sm:text-lg leading-none block truncate', navTextClass)}>
-                Lorenzo &amp; Lorenzo
-              </span>
-              <span className={cn('block text-[0.65rem] sm:text-xs tracking-[0.08em] uppercase leading-tight', navMutedTextClass)}>
-                {t('nav.tagline')}
-              </span>
-            </div>
-          </button>
+          {isHomePage ? (
+            <button
+              onClick={() => scrollToSection('hero')}
+              className="flex items-center gap-2 sm:gap-3 min-w-0"
+            >
+              <img src={logo} alt={t('nav.logoAlt')} className="h-10 sm:h-12 w-auto flex-shrink-0" />
+              <div className="text-left text-primary w-fit flex flex-col gap-0 min-w-0">
+                <span className={cn('font-semibold text-base sm:text-lg leading-none block truncate', navTextClass)}>
+                  Lorenzo &amp; Lorenzo
+                </span>
+                <span className={cn('block text-[0.65rem] sm:text-xs tracking-[0.08em] uppercase leading-tight', navMutedTextClass)}>
+                  {t('nav.tagline')}
+                </span>
+              </div>
+            </button>
+          ) : (
+            <Link
+              to="/"
+              className="flex items-center gap-2 sm:gap-3 min-w-0"
+            >
+              <img src={logo} alt={t('nav.logoAlt')} className="h-10 sm:h-12 w-auto flex-shrink-0" />
+              <div className="text-left text-primary w-fit flex flex-col gap-0 min-w-0">
+                <span className={cn('font-semibold text-base sm:text-lg leading-none block truncate', navTextClass)}>
+                  Lorenzo &amp; Lorenzo
+                </span>
+                <span className={cn('block text-[0.65rem] sm:text-xs tracking-[0.08em] uppercase leading-tight', navMutedTextClass)}>
+                  {t('nav.tagline')}
+                </span>
+              </div>
+            </Link>
+          )}
 
-          <Button
-            variant="glass"
-            size="default"
-            onClick={() => scrollToSection('contact')}
-            className={cn('px-6 py-2.5 sm:px-7 sm:py-3', navTextClass)}
-          >
-            {t('cta.button')}
-          </Button>
+          <div className="flex items-center gap-3 sm:gap-4">
+            <Link
+              to="/blog"
+              className={cn(
+                'text-sm font-medium hover:text-primary transition-colors hidden sm:block',
+                navTextClass
+              )}
+            >
+              Blog
+            </Link>
+            {isHomePage ? (
+              <Button
+                variant="glass"
+                size="default"
+                onClick={() => scrollToSection('contact')}
+                className={cn('px-6 py-2.5 sm:px-7 sm:py-3', navTextClass)}
+              >
+                {t('cta.button')}
+              </Button>
+            ) : (
+              <Link to="/#contact">
+                <Button
+                  variant="glass"
+                  size="default"
+                  className={cn('px-6 py-2.5 sm:px-7 sm:py-3', navTextClass)}
+                >
+                  {t('cta.button')}
+                </Button>
+              </Link>
+            )}
+          </div>
         </div>
       </div>
     </nav>
