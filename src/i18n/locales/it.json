@@ -243,7 +243,8 @@
       "deckLinkLabel": "approccio alla gestione immobiliare"
     },
     "touristTaxNote": "Tassa di soggiorno Firenze: da €6,00 per persona per notte (fino a 7 notti). Chiamaci per dettagli.",
-    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Camere e Appartamenti Firenze"
+    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Camere e Appartamenti Firenze",
+    "blogLink": "Guida di Viaggio"
   },
   "notFound": {
     "title": "Pagina non trovata",
@@ -251,10 +252,30 @@
     "cta": "Torna alla home"
   },
   "seo": {
-    "title": "My Home in Florence BnB | Camere e Appartamenti Firenze | myhomeinflorence",
-    "description": "My Home in Florence B&B – camere e appartamenti accoglienti vicino Ponte Vecchio by Lorenzo & Lorenzo. Self check-in, parcheggio, valutazione 4,68★. Prenota diretto su myhomeinflorence.com!",
-    "keywords": "myhomeinflorence, my home in florence, my home in florence bnb, bed and breakfast firenze, b&b firenze, affittacamere firenze, appartamenti firenze, camere firenze centro, Lorenzo & Lorenzo Firenze, affitto breve Firenze, case vacanza Firenze, San Niccolò Firenze, Ponte Vecchio alloggio, alternativa Airbnb Firenze",
-    "ogTitle": "My Home in Florence BnB | Camere e Appartamenti Firenze",
-    "ogDescription": "My Home in Florence B&B di Lorenzo & Lorenzo. Camere e appartamenti vicino a Ponte Vecchio con self check-in e parcheggio. Valutazione 4,68★, oltre 1700 recensioni!"
+    "title": "B&B Lorenzo e Lorenzo Firenze | Bed and Breakfast Florence | myhomeinflorence",
+    "description": "B&B Lorenzo e Lorenzo – sito ufficiale. Camere e appartamenti accoglienti vicino Ponte Vecchio a Firenze. Self check-in, parcheggio, valutazione 4,68★. Prenota diretto su myhomeinflorence.com e risparmia!",
+    "keywords": "lorenzo e lorenzo b&b, b&b lorenzo e lorenzo firenze, bed and breakfast lorenzo e lorenzo, lorenzo&lorenzo firenze, B&B Lorenzo&Lorenzo, myhomeinflorence, my home in florence, bed and breakfast firenze, b&b firenze, affittacamere firenze, appartamenti firenze, camere firenze centro, Lorenzo & Lorenzo Firenze, affitto breve Firenze, case vacanza Firenze, San Niccolò Firenze, Ponte Vecchio alloggio, alternativa Airbnb Firenze",
+    "ogTitle": "B&B Lorenzo e Lorenzo Firenze | Bed and Breakfast Florence",
+    "ogDescription": "B&B Lorenzo e Lorenzo – sito ufficiale. Camere e appartamenti vicino a Ponte Vecchio con self check-in e parcheggio. Valutazione 4,68★, oltre 1700 recensioni. Prenota diretto e risparmia!"
+  },
+  "blog": {
+    "title": "Guida di Viaggio Firenze",
+    "subtitle": "Consigli pratici e suggerimenti locali per la tua visita a Firenze",
+    "readTime": "{{minutes}} min di lettura",
+    "readMore": "Leggi di più →",
+    "backToBlog": "Torna al Blog",
+    "byAuthor": "Di {{author}}",
+    "relatedHeading": "Altre Guide su Firenze",
+    "viewAll": "Vedi tutti gli articoli →",
+    "cta": {
+      "heading": "Pronto a Visitare Firenze?",
+      "description": "Prenota il tuo soggiorno nell'autentico quartiere di San Niccolò",
+      "button": "Vedi i Nostri Alloggi"
+    },
+    "postCta": {
+      "heading": "Stai Pianificando la Tua Visita a Firenze?",
+      "description": "Prenota il tuo alloggio a San Niccolò con host locali esperti.",
+      "button": "Vedi le Nostre Camere e Appartamenti"
+    }
   }
 }

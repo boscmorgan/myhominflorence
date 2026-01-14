@@ -1,5 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { getBlogPost } from '@/data/blogPosts';
@@ -7,6 +8,7 @@ import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 
 const BlogPost = () => {
+  const { t, i18n } = useTranslation();
   const { slug } = useParams<{ slug: string }>();
   const post = slug ? getBlogPost(slug) : undefined;
 
@@ -89,7 +91,7 @@ const BlogPost = () => {
             className="inline-flex items-center gap-2 text-muted-foreground hover:text-primary mb-8 transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Blog
+            {t('blog.backToBlog')}
           </Link>
 
           {/* Article Header */}
@@ -104,7 +106,7 @@ const BlogPost = () => {
               <div className="flex items-center gap-1">
                 <Calendar className="w-4 h-4" />
                 <time dateTime={post.publishedDate}>
-                  {new Date(post.publishedDate).toLocaleDateString('en-US', {
+                  {new Date(post.publishedDate).toLocaleDateString(i18n.language === 'zh' ? 'zh-CN' : i18n.language, {
                     year: 'numeric',
                     month: 'long',
                     day: 'numeric'
@@ -113,10 +115,10 @@ const BlogPost = () => {
               </div>
               <div className="flex items-center gap-1">
                 <Clock className="w-4 h-4" />
-                <span>5 min read</span>
+                <span>{t('blog.readTime', { minutes: 5 })}</span>
               </div>
               <div className="ml-auto">
-                By {post.author}
+                {t('blog.byAuthor', { author: post.author })}
               </div>
             </div>
           </header>
@@ -151,26 +153,26 @@ const BlogPost = () => {
 
           {/* Article Footer / CTA */}
           <div className="mt-12 p-6 bg-muted rounded-lg">
-            <h3 className="text-xl font-bold mb-2">Planning Your Florence Visit?</h3>
+            <h3 className="text-xl font-bold mb-2">{t('blog.postCta.heading')}</h3>
             <p className="text-muted-foreground mb-4">
-              Book your accommodation in San Niccolò with experienced local hosts.
+              {t('blog.postCta.description')}
             </p>
             <Link
               to="/"
               className="inline-block bg-primary text-primary-foreground px-6 py-2 rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
-              View Our Rooms & Apartments
+              {t('blog.postCta.button')}
             </Link>
           </div>
 
           {/* Related Articles */}
           <div className="mt-12 border-t pt-8">
-            <h3 className="text-xl font-bold mb-4">More Florence Guides</h3>
+            <h3 className="text-xl font-bold mb-4">{t('blog.relatedHeading')}</h3>
             <Link
               to="/blog"
               className="text-primary hover:underline"
             >
-              View all articles →
+              {t('blog.viewAll')}
             </Link>
           </div>
         </article>

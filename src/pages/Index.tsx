@@ -27,10 +27,10 @@ const Index = () => {
       "@context": "https://schema.org",
       "@graph": [
         {
-          "@type": "LodgingBusiness",
+          "@type": ["LodgingBusiness", "BedAndBreakfast"],
           "@id": "https://www.myhomeinflorence.com/#lodging",
-          "name": "Lorenzo & Lorenzo Rooms & Apartments",
-          "alternateName": ["myhomeinflorence", "My Home in Florence BnB", "My Home in Florence B&B", "myhomeinflorence.com", "Lorenzo & Lorenzo Florence"],
+          "name": "B&B Lorenzo and Lorenzo Florence",
+          "alternateName": ["Lorenzo&Lorenzo", "B&B Lorenzo&Lorenzo", "Lorenzo e Lorenzo B&B", "Bed and Breakfast Lorenzo e Lorenzo", "Lorenzo and Lorenzo B&B", "B&B Lorenzo&Lorenzo Vol.2", "myhomeinflorence", "My Home in Florence BnB", "My Home in Florence B&B", "myhomeinflorence.com", "Lorenzo & Lorenzo Florence", "Bed and Breakfast Lorenzo&Lorenzo Firenze"],
           "description": t('hero.valueProp'),
           "url": "https://www.myhomeinflorence.com",
           "telephone": ["+39 055 2638097", "+39 339 1554694", "+39 389 0108370"],
@@ -73,7 +73,14 @@ const Index = () => {
               "@type": "AdministrativeArea",
               "name": "Tuscany"
             }
-          }
+          },
+          "sameAs": [
+            "https://www.airbnb.it/rooms/14553569",
+            "https://www.booking.com/hotel/it/b-amp-b-lorenzo-amp-lorenzo-vol-2.it.html",
+            "https://www.tripadvisor.it/Hotel_Review-g187895-d1807094-Reviews-Bed_and_Breakfast_Lorenzo_Lorenzo-Florence_Tuscany.html",
+            "https://www.facebook.com/bblorenzoandlorenzo",
+            "https://www.trivago.it/it-IT/oar/b-b-lorenzo-lorenzo-vol-2-firenze"
+          ]
         },
         {
           "@type": "ParkingFacility",

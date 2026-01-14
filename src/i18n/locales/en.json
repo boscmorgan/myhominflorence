@@ -243,7 +243,8 @@
       "deckLinkLabel": "property management approach"
     },
     "touristTaxNote": "Florence tourist tax (tassa di soggiorno): from €6.00 per person per night (up to 7 nights). Call us for details.",
-    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Rooms & Apartments Florence"
+    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Rooms & Apartments Florence",
+    "blogLink": "Travel Guide"
   },
   "notFound": {
     "title": "Page not found",
@@ -251,10 +252,30 @@
     "cta": "Return to home"
   },
   "seo": {
-    "title": "My Home in Florence BnB | Florence Apartments & Rooms | myhomeinflorence",
-    "description": "My Home in Florence B&B – cozy rooms & apartments near Ponte Vecchio by Lorenzo & Lorenzo. Self check-in, parking tips, 4.68★ rating. Book direct at myhomeinflorence.com!",
-    "keywords": "myhomeinflorence, my home in florence, my home in florence bnb, my home in florence b&b, Florence BnB, Florence B&B, bed and breakfast Florence, Lorenzo & Lorenzo Florence, Florence apartments, Airbnb Florence, rooms Florence center, vacation rental Florence, affordable accommodation Florence, San Niccolò Florence, Ponte Vecchio accommodation",
-    "ogTitle": "My Home in Florence BnB | Florence Apartments & Rooms",
-    "ogDescription": "My Home in Florence B&B by Lorenzo & Lorenzo. Cozy stays near Ponte Vecchio with self check-in & parking. 4.68★ rating, 1700+ reviews. Book direct and save!"
+    "title": "B&B Lorenzo and Lorenzo Florence | Bed and Breakfast Firenze | myhomeinflorence",
+    "description": "B&B Lorenzo and Lorenzo – official site. Cozy rooms & apartments near Ponte Vecchio in Florence. Self check-in, parking tips, 4.68★ rating. Book direct at myhomeinflorence.com and save!",
+    "keywords": "lorenzo e lorenzo b&b, lorenzo and lorenzo b&b, b&b lorenzo e lorenzo, bed and breakfast lorenzo e lorenzo, lorenzo&lorenzo florence, B&B Lorenzo&Lorenzo, myhomeinflorence, my home in florence, Florence BnB, Florence B&B, bed and breakfast Florence, Lorenzo & Lorenzo Florence, Florence apartments, Airbnb Florence, rooms Florence center, vacation rental Florence, affordable accommodation Florence, San Niccolò Florence, Ponte Vecchio accommodation",
+    "ogTitle": "B&B Lorenzo and Lorenzo Florence | Bed and Breakfast Firenze",
+    "ogDescription": "B&B Lorenzo and Lorenzo – official site. Cozy rooms & apartments near Ponte Vecchio with self check-in & parking. 4.68★ rating, 1700+ reviews. Book direct and save!"
+  },
+  "blog": {
+    "title": "Florence Travel Guide",
+    "subtitle": "Practical tips and local insights for your Florence visit",
+    "readTime": "{{minutes}} min read",
+    "readMore": "Read more →",
+    "backToBlog": "Back to Blog",
+    "byAuthor": "By {{author}}",
+    "relatedHeading": "More Florence Guides",
+    "viewAll": "View all articles →",
+    "cta": {
+      "heading": "Ready to Visit Florence?",
+      "description": "Book your stay in authentic San Niccolò neighborhood",
+      "button": "View Our Accommodations"
+    },
+    "postCta": {
+      "heading": "Planning Your Florence Visit?",
+      "description": "Book your accommodation in San Niccolò with experienced local hosts.",
+      "button": "View Our Rooms & Apartments"
+    }
   }
 }

@@ -1,11 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { getAllBlogPosts } from '@/data/blogPosts';
 import { Calendar, Clock } from 'lucide-react';
 
 const Blog = () => {
+  const { t, i18n } = useTranslation();
   const posts = getAllBlogPosts();
 
   return (
@@ -73,10 +75,10 @@ const Blog = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              Florence Travel Guide
+              {t('blog.title')}
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Practical tips and local insights for your Florence visit
+              {t('blog.subtitle')}
             </p>
           </div>
 
@@ -98,7 +100,7 @@ const Blog = () => {
                     <div className="flex items-center gap-1">
                       <Calendar className="w-4 h-4" />
                       <time dateTime={post.publishedDate}>
-                        {new Date(post.publishedDate).toLocaleDateString('en-US', {
+                        {new Date(post.publishedDate).toLocaleDateString(i18n.language === 'zh' ? 'zh-CN' : i18n.language, {
                           year: 'numeric',
                           month: 'long',
                           day: 'numeric'
@@ -107,11 +109,11 @@ const Blog = () => {
                     </div>
                     <div className="flex items-center gap-1">
                       <Clock className="w-4 h-4" />
-                      <span>5 min read</span>
+                      <span>{t('blog.readTime', { minutes: 5 })}</span>
                     </div>
                   </div>
                   <div className="mt-4 text-primary font-medium group-hover:underline">
-                    Read more →
+                    {t('blog.readMore')}
                   </div>
                 </Link>
               </article>
@@ -120,15 +122,15 @@ const Blog = () => {
 
           {/* CTA Section */}
           <div className="mt-16 text-center bg-muted rounded-lg p-8">
-            <h2 className="text-2xl font-bold mb-4">Ready to Visit Florence?</h2>
+            <h2 className="text-2xl font-bold mb-4">{t('blog.cta.heading')}</h2>
             <p className="text-muted-foreground mb-6">
-              Book your stay in authentic San Niccolò neighborhood
+              {t('blog.cta.description')}
             </p>
             <Link
               to="/"
               className="inline-block bg-primary text-primary-foreground px-6 py-3 rounded-lg font-medium hover:bg-primary/90 transition-colors"
             >
-              View Our Accommodations
+              {t('blog.cta.button')}
             </Link>
           </div>
         </div>

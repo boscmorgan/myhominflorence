@@ -156,7 +156,7 @@ const Footer = () => {
             <p className="text-primary-foreground/80">{t('footer.copyright')}</p>
             <span className="hidden sm:inline text-primary-foreground/40">|</span>
             <Link to="/blog" className="text-primary-foreground/80 hover:text-primary-foreground underline underline-offset-4">
-              Travel Guide
+              {t('footer.blogLink')}
             </Link>
           </div>
           <div className="flex items-center gap-2">
@@ -169,10 +169,10 @@ const Footer = () => {
                 aria-haspopup="listbox"
                 aria-expanded={isLangOpen}
                 onClick={() => setIsLangOpen((prev) => !prev)}
-                className="inline-flex items-center gap-1 rounded-full border border-border/70 bg-foreground/5 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-foreground transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                className="inline-flex items-center gap-1 rounded-full border border-primary-foreground/40 bg-primary-foreground/10 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.3em] text-primary-foreground transition hover:bg-primary-foreground/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 <span>{selectedLanguage.label}</span>
-                <ChevronDown size={14} className="text-foreground/70" />
+                <ChevronDown size={14} className="text-primary-foreground/70" />
               </button>
               {isLangOpen && (
                 <ul

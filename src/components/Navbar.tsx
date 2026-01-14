@@ -8,11 +8,12 @@ import logo from '@/assets/logo_002.png';
 const Navbar = () => {
   const [isHidden, setIsHidden] = useState(false);
   const [heroHeight, setHeroHeight] = useState(0);
-  const [isDarkMenuText, setIsDarkMenuText] = useState(false);
   const lastScrollY = useRef(0);
   const { t } = useTranslation();
   const location = useLocation();
   const isHomePage = location.pathname === '/';
+  // On non-home pages, always use dark text since there's no dark hero
+  const [isDarkMenuText, setIsDarkMenuText] = useState(!isHomePage);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -20,6 +21,19 @@ const Navbar = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+
+  // Reset dark menu text state when navigating between pages
+  useEffect(() => {
+    if (!isHomePage) {
+      setIsDarkMenuText(true);
+    } else {
+      // On home page, check scroll position
+      const currentScrollY = window.scrollY;
+      const hero = document.getElementById('hero');
+      const heroH = hero ? hero.offsetHeight : window.innerHeight;
+      setIsDarkMenuText(currentScrollY >= heroH);
+    }
+  }, [isHomePage]);
 
   useEffect(() => {
     const updateHeroHeight = () => {
@@ -43,7 +57,8 @@ const Navbar = () => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
 
-      const shouldUseDarkText = heroHeight > 0 ? currentScrollY >= heroHeight : false;
+      // On non-home pages, always use dark text since there's no dark hero
+      const shouldUseDarkText = !isHomePage || (heroHeight > 0 ? currentScrollY >= heroHeight : false);
       setIsDarkMenuText(shouldUseDarkText);
 
       if (currentScrollY <= heroHeight) {
@@ -71,9 +86,14 @@ const Navbar = () => {
   const navTextClass = isDarkMenuText ? 'text-foreground' : 'text-primary-foreground';
   const navMutedTextClass = isDarkMenuText ? 'text-foreground/80' : 'text-primary-foreground/80';
 
+  // Use light background on non-home pages or when scrolled past hero
+  const navBgStyle = isDarkMenuText
+    ? { backgroundColor: 'hsla(var(--background), 0.95)' }
+    : { backgroundColor: 'hsla(var(--foreground), 0.92)' };
+
   return (
     <nav
-      style={{ backgroundColor: 'hsla(var(--foreground), 0.92)' }}
+      style={navBgStyle}
       className={cn(
         'fixed top-0 left-0 right-0 z-50 border-b border-border/60 backdrop-blur-xl bg-opacity-90 transform transition-transform duration-300 ease-in-out',
         navTextClass,
@@ -115,15 +135,6 @@ const Navbar = () => {
           )}
 
           <div className="flex items-center gap-3 sm:gap-4">
-            <Link
-              to="/blog"
-              className={cn(
-                'text-sm font-medium hover:text-primary transition-colors hidden sm:block',
-                navTextClass
-              )}
-            >
-              Blog
-            </Link>
             {isHomePage ? (
               <Button
                 variant="glass"

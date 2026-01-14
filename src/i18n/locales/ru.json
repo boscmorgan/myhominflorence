@@ -243,7 +243,8 @@
       "deckLinkLabel": "подход к управлению недвижимостью"
     },
     "touristTaxNote": "Туристический налог Флоренции: от €6,00 с человека за ночь (до 7 ночей). Звоните для уточнения.",
-    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Номера и апартаменты Флоренция"
+    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | Номера и апартаменты Флоренция",
+    "blogLink": "Путеводитель"
   },
   "notFound": {
     "title": "Страница не найдена",
@@ -251,10 +252,30 @@
     "cta": "На главную"
   },
   "seo": {
-    "title": "My Home in Florence BnB | Апартаменты Флоренция | myhomeinflorence",
-    "description": "My Home in Florence B&B – уютные номера и апартаменты рядом с мостом Понте Веккьо от Lorenzo & Lorenzo. Самостоятельная регистрация, парковка, рейтинг 4,68★. Бронируйте на myhomeinflorence.com!",
-    "keywords": "myhomeinflorence, my home in florence, my home in florence bnb, гостиница Флоренция, апартаменты Флоренция, аренда Флоренция, Lorenzo & Lorenzo, жилье Флоренция, San Niccolò Флоренция, Понте Веккьо размещение, краткосрочная аренда Флоренция",
-    "ogTitle": "My Home in Florence BnB | Номера и Апартаменты Флоренция",
-    "ogDescription": "My Home in Florence B&B от Lorenzo & Lorenzo. Проживание рядом с Понте Веккьо с самостоятельной регистрацией и парковкой. Рейтинг 4,68★, 1700+ отзывов!"
+    "title": "B&B Lorenzo and Lorenzo Флоренция | Bed and Breakfast Florence | myhomeinflorence",
+    "description": "B&B Lorenzo and Lorenzo – официальный сайт. Уютные номера и апартаменты рядом с мостом Понте Веккьо во Флоренции. Самостоятельная регистрация, парковка, рейтинг 4,68★. Бронируйте на myhomeinflorence.com и экономьте!",
+    "keywords": "lorenzo e lorenzo b&b, lorenzo and lorenzo b&b, B&B Lorenzo&Lorenzo, myhomeinflorence, my home in florence, гостиница Флоренция, апартаменты Флоренция, аренда Флоренция, Lorenzo & Lorenzo, жилье Флоренция, San Niccolò Флоренция, Понте Веккьо размещение, краткосрочная аренда Флоренция",
+    "ogTitle": "B&B Lorenzo and Lorenzo Флоренция | Bed and Breakfast Florence",
+    "ogDescription": "B&B Lorenzo and Lorenzo – официальный сайт. Проживание рядом с Понте Веккьо с самостоятельной регистрацией и парковкой. Рейтинг 4,68★, 1700+ отзывов. Бронируйте напрямую!"
+  },
+  "blog": {
+    "title": "Путеводитель по Флоренции",
+    "subtitle": "Практические советы и местные рекомендации для вашего визита во Флоренцию",
+    "readTime": "{{minutes}} мин чтения",
+    "readMore": "Читать далее →",
+    "backToBlog": "Назад к блогу",
+    "byAuthor": "Автор: {{author}}",
+    "relatedHeading": "Ещё путеводители по Флоренции",
+    "viewAll": "Все статьи →",
+    "cta": {
+      "heading": "Готовы посетить Флоренцию?",
+      "description": "Забронируйте проживание в аутентичном районе Сан-Никколо",
+      "button": "Посмотреть наши номера"
+    },
+    "postCta": {
+      "heading": "Планируете визит во Флоренцию?",
+      "description": "Забронируйте жильё в Сан-Никколо у опытных местных хозяев.",
+      "button": "Посмотреть номера и апартаменты"
+    }
   }
 }

@@ -243,7 +243,8 @@
       "deckLinkLabel": "物业管理方法"
     },
     "touristTaxNote": "佛罗伦萨旅游税：每人每晚 €6.00 起（最多 7 晚）。请致电了解详情。",
-    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | 佛罗伦萨客房和公寓"
+    "copyright": "© 2025 Lorenzo & Lorenzo | myhomeinflorence.com | 佛罗伦萨客房和公寓",
+    "blogLink": "旅行指南"
   },
   "notFound": {
     "title": "未找到页面",
@@ -251,10 +252,30 @@
     "cta": "返回首页"
   },
   "seo": {
-    "title": "My Home in Florence BnB | 佛罗伦萨公寓 | myhomeinflorence",
-    "description": "My Home in Florence B&B – Lorenzo & Lorenzo 经营的老桥附近舒适客房和公寓。自助入住，停车服务，4.68★ 评分。直接在 myhomeinflorence.com 预订！",
-    "keywords": "myhomeinflorence, my home in florence, my home in florence bnb, 佛罗伦萨民宿, 佛罗伦萨公寓, Lorenzo & Lorenzo, 佛罗伦萨住宿, San Niccolò 佛罗伦萨, 老桥住宿, 佛罗伦萨度假租赁",
-    "ogTitle": "My Home in Florence BnB | 佛罗伦萨客房和公寓",
-    "ogDescription": "My Home in Florence B&B 由 Lorenzo & Lorenzo 运营。老桥附近住宿，提供自助入住和停车。4.68★ 评分，1700+ 条评论！"
+    "title": "B&B Lorenzo and Lorenzo 佛罗伦萨 | Bed and Breakfast Florence | myhomeinflorence",
+    "description": "B&B Lorenzo and Lorenzo – 官方网站。老桥附近舒适客房和公寓。自助入住，停车服务，4.68★ 评分。直接在 myhomeinflorence.com 预订并节省！",
+    "keywords": "lorenzo e lorenzo b&b, lorenzo and lorenzo b&b, B&B Lorenzo&Lorenzo, myhomeinflorence, my home in florence, 佛罗伦萨民宿, 佛罗伦萨公寓, Lorenzo & Lorenzo, 佛罗伦萨住宿, San Niccolò 佛罗伦萨, 老桥住宿, 佛罗伦萨度假租赁",
+    "ogTitle": "B&B Lorenzo and Lorenzo 佛罗伦萨 | Bed and Breakfast Florence",
+    "ogDescription": "B&B Lorenzo and Lorenzo – 官方网站。老桥附近住宿，提供自助入住和停车。4.68★ 评分，1700+ 条评论。直接预订更省钱！"
+  },
+  "blog": {
+    "title": "佛罗伦萨旅行指南",
+    "subtitle": "为您的佛罗伦萨之旅提供实用建议和当地见解",
+    "readTime": "{{minutes}} 分钟阅读",
+    "readMore": "阅读更多 →",
+    "backToBlog": "返回博客",
+    "byAuthor": "作者：{{author}}",
+    "relatedHeading": "更多佛罗伦萨指南",
+    "viewAll": "查看所有文章 →",
+    "cta": {
+      "heading": "准备好访问佛罗伦萨了吗？",
+      "description": "在正宗的圣尼科洛社区预订您的住宿",
+      "button": "查看我们的住宿"
+    },
+    "postCta": {
+      "heading": "正在计划您的佛罗伦萨之旅？",
+      "description": "在圣尼科洛与经验丰富的当地房东预订住宿。",
+      "button": "查看我们的客房和公寓"
+    }
   }
 }
