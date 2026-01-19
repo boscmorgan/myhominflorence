@@ -56,12 +56,12 @@ export const SEO = ({
       <meta name="twitter:image" content={ogImage} />
 
       {/* Hreflang tags */}
-      <link rel="alternate" hreflang="en" href="https://www.myhomeinflorence.com" />
-      <link rel="alternate" hreflang="it" href="https://www.myhomeinflorence.com?lang=it" />
-      <link rel="alternate" hreflang="es" href="https://www.myhomeinflorence.com?lang=es" />
-      <link rel="alternate" hreflang="ru" href="https://www.myhomeinflorence.com?lang=ru" />
-      <link rel="alternate" hreflang="zh" href="https://www.myhomeinflorence.com?lang=zh" />
-      <link rel="alternate" hreflang="x-default" href="https://www.myhomeinflorence.com" />
+      <link rel="alternate" hrefLang="en" href="https://www.myhomeinflorence.com" />
+      <link rel="alternate" hrefLang="it" href="https://www.myhomeinflorence.com?lang=it" />
+      <link rel="alternate" hrefLang="es" href="https://www.myhomeinflorence.com?lang=es" />
+      <link rel="alternate" hrefLang="ru" href="https://www.myhomeinflorence.com?lang=ru" />
+      <link rel="alternate" hrefLang="zh" href="https://www.myhomeinflorence.com?lang=zh" />
+      <link rel="alternate" hrefLang="x-default" href="https://www.myhomeinflorence.com" />
     </Helmet>
   );
 };
